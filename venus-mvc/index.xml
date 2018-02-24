@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Venus介绍 on Venus中间件</title>
+    <link>http://venusplus.cn/venus-mvc/</link>
+    <description>Recent content in Venus介绍 on Venus中间件</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>2017 Venus Plus出品</copyright>
+    <lastBuildDate>Thu, 27 Apr 2017 10:09:20 +0000</lastBuildDate>
+    
+	<atom:link href="http://venusplus.cn/venus-mvc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Venus MVC介绍</title>
+      <link>http://venusplus.cn/venus-mvc/quickstart/</link>
+      <pubDate>Thu, 27 Apr 2017 10:09:20 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/venus-mvc/quickstart/</guid>
+      <description>Basement 专注于解决 web 应用的研发时问题，主要包括 研发支撑 和 基础服务 两部分。
+使用 Basement，你可以享受简单自然的研发流程，可以使用各种稳定高效的基础服务，以快速开发出功能强劲的应用。
+ 研发支撑  Just Coding
+ Basement 提供了 Chair、H5、Site、Assets、TWA(Techless Web App) 等多种类型应用的研发支撑。它将日常中的迭代流程、代码管理、云构建、服务器部署等高频操作统统化繁为简，让你告别繁琐冗长的流程，只需不多于 4 步操作即可完成一次迭代。
+即刻在 Basement 上 创建或关联应用，享受简单而高效的迭代管理，你需要关心的，只有代码本身。
+ 基础服务  Powerful、Reliable and Simple
+ Basement 提供能支撑十亿级 PV 的页面渲染托管服务、轻量的 mongodb 数据存储服务、强大的文件同步等高质量服务，配备 HTTP(S)、JS SDK 等多种接入方式，易于上手。配套完备的服务数据与日志，让你对服务资源的使用情况了然于胸，有的放矢。
+所有这一切只需在 Basement 上 创建你的产品，使用产品关联的服务账号，即可尽情体验它带来丰富和便捷。</description>
+    </item>
+    
+  </channel>
+</rss>
