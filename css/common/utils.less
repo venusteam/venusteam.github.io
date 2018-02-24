@@ -1,0 +1,34 @@
+
+.clearfix{
+  &:after{
+    content: ' ';
+    display: block;
+    height: 0;
+    clear: both;
+  }
+}
+.hidden{
+  display: none;
+}
+.gradient(@color){
+  background: -moz-linear-gradient(top, @color 0%, darken(@color, 10%) 100%);
+  background: -webkit-linear-gradient(top, @color 0%, darken(@color, 10%) 100%);
+  background: -o-linear-gradient(top, @color 0%, darken(@color, 10%) 100%);
+  background: -ms-linear-gradient(top, @color 0%, darken(@color, 10%) 100%);
+  background: linear-gradient(to bottom, @color 0%, darken(@color, 10%) 100%);
+}
+
+.gradientRevert(@color){
+  background: -moz-linear-gradient(bottom, @color 0%, darken(@color, 10%) 100%);
+  background: -webkit-linear-gradient(bottom, @color 0%, darken(@color, 10%) 100%);
+  background: -o-linear-gradient(bottom, @color 0%, darken(@color, 10%) 100%);
+  background: -ms-linear-gradient(bottom, @color 0%, darken(@color, 10%) 100%);
+  background: linear-gradient(to top, @color 0%, darken(@color, 10%) 100%);
+}
+
+.transition{
+  -moz-transition: all 0.5s cubic-bezier(.4,0,.2,1);
+  -webkit-transition: all 0.5s cubic-bezier(.4,0,.2,1);
+  -o-transition: all 0.5s cubic-bezier(.4,0,.2,1);
+  transition: all 0.5s cubic-bezier(.4,0,.2,1);
+}

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="base-url" content="http://venusplus.cn/">
+    <link type="image/png" href="/images/head.png" rel="shortcut icon" />
+    <base href="http://venusplus.cn/">
+    <link rel="stylesheet" href="css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_18677_3gesaak2gctyb9.css">
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/vendor/antd.min.css" rel="stylesheet">
+    <link href="css/vendor/swiper.min.css" rel="stylesheet">
+    <title>Venus中间件-快速上手</title>
+    <script src="js/vendor/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.min.js" type="text/javascript" charset="utf-8"></script>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+  </head>
+  <body data-url="/user-guide/cu373w/" class="theme">
+    
+<div class="header">
+  <div>
+    <div class="header-wrapper">
+      <div class="header-logo">
+        <a href=/>
+          <img src="/images/logo.png" alt="">
+        </a>
+      </div>
+      <ul class="sofa-menu ant-menu ant-menu-horizontal ant-menu-light ant-menu-root" role="menu">
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/">首页</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="product-menu">
+                <div class="product-menu-wrapper">
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">快速开发框架</div>
+                      
+                        <a href=/product/venus class="product-menu-title-link">Venus</a>
+                      
+                        <a href=/product/venusboot class="product-menu-title-link">Venus Boot</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">微服务框架</div>
+                      
+                        <a href=/product/venus-cloud class="product-menu-title-link">Venus Cloud</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">经典中间件</div>
+                      
+                        <a href=/product/talos class="product-menu-title-link">Talos网关</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">数据中间件</div>
+                      
+                        <a href=/product/venus-dts class="product-menu-title-link">Venus DTS</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">工具和公共类库</div>
+                      
+                        <a href=/product/venus-codegen class="product-menu-title-link">Venus CodeGen</a>
+                      
+                    </div>
+                  
+                </div>
+              </div>
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="javascript:;">产品</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">文档</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">控制台</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">关于我们</a>
+                
+                
+                
+              </div>
+          </li>
+        
+
+      </ul>
+      <div class="sofa-menu-right pull-right">
+       
+        <div class="search">
+          <span class="ant-input-group-wrapper" style="width: 262px;">
+            <span class="ant-input-wrapper ant-input-group">
+              
+              <span class="ant-input-search ant-input-affix-wrapper">
+                <form class="search-form" action=/search method="get">
+                    <input type="text" name="q" placeholder="请输入搜索内容" value="" class="ant-input" autocomplete="off" />
+                    <input type="hidden" name="title" value="新人上手">
+                </form>
+                <span class="ant-input-suffix">
+                  <i class="anticon anticon-search ant-input-search-icon"></i>
+                </span>
+              </span>
+            </span>
+          </span>
+        </div>
+
+       
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="main">
+      
+  
+  
+    <div class="pg-artical " id="pg-artical">
+      <div class="wrap">
+        
+<div class="nav-section">
+  <div class="navbar">
+    <span class="larkicon larkicon-toc"></span>
+  </div>
+  <nav class="nav-container">
+    <ul class="catalog">
+      
+        
+        <li class="current-book">
+          <span class="name">新人上手3</span>
+          <div class="liebiao-wrapper">
+            
+              <i id="title-liebiao-icon" class="title-liebiao-icon iconfont icon-liebiao"></i>
+            
+
+            <div class="docs-map">
+              <div class="docs-map-wrapper">
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">开发框架</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/#">Venus Framework</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">微服务框架</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/twa">Venus Cloud</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">中间件</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/talos">Talos网关</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">数据库中间件</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/venus-dts">DTS</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">工具类</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/venus-codegen">CodeGen</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">帮助中心</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/user-guide">新人上手</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+              </div>
+            </div>
+          </div>
+
+        </li>
+        
+          <li class="nav-item depth1   " data-currentPath="1" data-rootPath="1"><a href="user-guide/readme" class="">
+              简介
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="2" data-rootPath="2"><a href="user-guide/product-application-intro" class="">
+              产品与应用
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="3" data-rootPath="3"><a href="user-guide/sprint-intro" class="">
+              应用研发
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="4" data-rootPath="4"><a href="user-guide/service-intro" class="">
+              服务
+            </a></li>
+        
+      
+    </ul>
+  </nav>
+</div>
+
+        <div class="main-container">
+          <div id="page-toc"></div>
+          <div class="artical-section larksite">
+    <div class="doc-article">
+      <article class="doc-article-inner">
+        <div class="typo">
+          <h1 class="typo-title" itemprop="title">
+          快速上手
+          </h1>
+          <p class="meta">更新时间: <span>2017-2-20</span></p>
+          <div class="typo-content">
+            <p><h2 id="node-用户"><a class="anchor" href="#node-%E7%94%A8%E6%88%B7"><span class="octicon octicon-link"></span></a> node 用户</h2>
+<h4 id="安装-basement-sdk"><a class="anchor" href="#%E5%AE%89%E8%A3%85-basement-sdk"><span class="octicon octicon-link"></span></a> 安装 basement sdk</h4>
+<pre><code class="lang-shell hljs raw"> tnpm i @alipay/basement co urllib &ndash;save
+</code></pre>
+<h4 id="示例"><a class="anchor" href="#%E7%A4%BA%E4%BE%8B"><span class="octicon octicon-link"></span></a> 示例</h4>
+<p>新建 index.js 文件，然后添加如下代码</p>
+<pre><code class="lang-javascript hljs raw"><span class="hljs-keyword">const</span> Basement = <span class="hljs-built_in">require</span>(<span class="hljs-string">&rsquo;@alipay/basement&rsquo;</span>);
+<span class="hljs-keyword">const</span> urllib = <span class="hljs-built_in">require</span>(<span class="hljs-string">&lsquo;urllib&rsquo;</span>);
+<span class="hljs-keyword">const</span> co = <span class="hljs-built_in">require</span>(<span class="hljs-string">&lsquo;co&rsquo;</span>);</p>
+
+<p><span class="hljs-keyword">const</span> basement = <span class="hljs-keyword">new</span> Basement({
+    <span class="hljs-attr">appId</span>: <span class="hljs-string">&lsquo;5885827c9a7934057979d4db&rsquo;</span>,
+    <span class="hljs-attr">masterKey</span>: <span class="hljs-string">&lsquo;1csgxwXVuI_t05UK_EheY7NN&rsquo;</span>,
+    urllib,
+    <span class="hljs-attr">endpoint</span>: <span class="hljs-string">&lsquo;<a href="http://basement-api.stable.alipay.net'">http://basement-api.stable.alipay.net'</a></span>
+});
+co(<span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">const</span> ret = <span class="hljs-keyword">yield</span> basement.file.upload(<span class="hljs-string">&lsquo;1.txt&rsquo;</span>, <span class="hljs-keyword">new</span> Buffer(<span class="hljs-string">&lsquo;test content&rsquo;</span>));
+    <span class="hljs-built_in">console</span>.log(ret)
+}).catch(<span class="hljs-function"><span class="hljs-params">e</span> =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(e);
+});</p>
+
+<p></code></pre>
+<h4 id="结果输出"><a class="anchor" href="#%E7%BB%93%E6%9E%9C%E8%BE%93%E5%87%BA"><span class="octicon octicon-link"></span></a> 结果输出</h4>
+<pre><code class="lang-shell hljs raw"><span class="hljs-meta">$</span><span class="bash"> node index.js</span>
+{ ETag: &lsquo;9473FDD0D880A43C21B7778D34872157&rsquo;,
+  name: &lsquo;1.txt&rsquo;,
+  size: 12,
+  type: &lsquo;txt&rsquo;,
+  url: &lsquo;<a href="http://alipay-office.oss-cn-hangzhou-zmf.aliyuncs.com/lanjuetest/1.txt'">http://alipay-office.oss-cn-hangzhou-zmf.aliyuncs.com/lanjuetest/1.txt'</a> }
+</code></pre>
+<h2 id="java-用户"><a class="anchor" href="#java-%E7%94%A8%E6%88%B7"><span class="octicon octicon-link"></span></a> Java 用户</h2>
+<h4 id="安装-sdk"><a class="anchor" href="#%E5%AE%89%E8%A3%85-sdk"><span class="octicon octicon-link"></span></a> 安装 SDK</h4>
+<pre><code class="lang-xml hljs raw"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.alipay.basement<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>basement-file<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.1.0<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<h4 id="示例-1"><a class="anchor" href="#%E7%A4%BA%E4%BE%8B-1"><span class="octicon octicon-link"></span></a> 示例</h4>
+<pre><code class="lang-java hljs raw"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BasementFile</span> </span>{</p>
+
+<pre><code>&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(String[] args)&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;throws&lt;/span&gt; BasementRequestException &lt;/span&gt;{
+    &lt;span class=&quot;hljs-keyword&quot;&gt;final&lt;/span&gt; FileClientConfig fileClientConfig = &lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; FileClientConfig();
+    fileClientConfig.setAppId(&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;5885827c9a7934057979d4db&amp;quot;&lt;/span&gt;);
+    fileClientConfig.setMasterKey(&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;1csgxwXVuI_t05UK_EheY7NN&amp;quot;&lt;/span&gt;);
+    fileClientConfig.setEndpoint(&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;http://basement-api.stable.alipay.net&amp;quot;&lt;/span&gt;);
+    fileClientConfig.setAppName(&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;lanjue&amp;quot;&lt;/span&gt;);
+    fileClientConfig.setTargetEnv(&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;DEV&amp;quot;&lt;/span&gt;);
+    &lt;span class=&quot;hljs-keyword&quot;&gt;final&lt;/span&gt; DefaultFileClient fileClient = &lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; DefaultFileClient(fileClientConfig);
+    &lt;span class=&quot;hljs-keyword&quot;&gt;final&lt;/span&gt; StringReq stringReq = &lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; StringReq(&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;1.txt&amp;quot;&lt;/span&gt;, &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;test content&amp;quot;&lt;/span&gt;, FileEnv.PUBLIC,
+            &lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;shouna.ysn&amp;quot;&lt;/span&gt;);
+    &lt;span class=&quot;hljs-keyword&quot;&gt;final&lt;/span&gt; FileMetadata fileMetadata = fileClient.upload(stringReq);
+    System.out.println(fileMetadata);
+}
+</code></pre>
+
+<p>}
+</code></pre>
+<h4 id="结果输出-1"><a class="anchor" href="#%E7%BB%93%E6%9E%9C%E8%BE%93%E5%87%BA-1"><span class="octicon octicon-link"></span></a> 结果输出</h4>
+<p><img src="https://zos.alipayobjects.com/skylark/0e84bd72-c286-4f8b-bd42-9e89443be78f/attach/2153/1b496ad8f1f30c24/image.png" alt="image" class="align-none" /></p></p>
+
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+    <div class="mask hidden"></div>
+    
+      <script src="https://gw.alipayobjects.com/as/g/lark/site-toc/2.0.9/toc.js"></script>
+<script>
+  $('#page-toc').generateToc({
+    contentContainer: $('.typo'),
+    hasFirstLevelHeader: false,
+    offsetTop: 0,
+    affix: {
+      bgColor: "transparent",
+    },
+  })
+</script>
+
+    
+  
+
+    </div>
+    <div class="ant-row footer" style="background-image: linear-gradient(180deg,#050b22 0,#050b22 50%,#032158);">
+  <div class="footer-content">
+    <div class="ant-row footer-desc">
+      <div class="ant-col-8 ant-col-offset-2 footer-team">
+        <h4>我们的团队</h4>
+        <p>中国，上海</p>
+      </div>
+      <div class="ant-col-4 ant-col-offset-2 footer-friend">
+        <h4>友情链接</h4>
+        <p>
+          <a href="http://xujin.org">许进沉思录</a>
+        </p>
+        <p>
+          <a href="https://springcloud.cn">Spring Cloud中国社区</a>
+        </p>
+
+      </div>
+      <div class="ant-col-6 ant-col-offset-2 footer-contact">
+        <h4>联系我们</h4>
+        <p>业务咨询：<a href="mailto: Software_King@qq.com">Software_King@qq.com</a></p>
+        <p>技术咨询：<a href="mailto: Software_King@qq.com">Software_King@qq.com</a></p>
+        
+      </div>
+    </div>
+    <div class="copyright">
+      Venus Plus版权所有 &copy; 2017-2020 Venus中间件团队体系  Powered by xujin.org
+    </div>
+  </div>
+</div>
+
+
+    
+    <div style="display: none">
+    <script src="https://s19.cnzz.com/z_stat.php?id=1268345961&web_id=1268345961" language="JavaScript"></script>
+    </div>
+    
+    <script>
+    window.SupportConfig = {
+      appId: "5a027aa32cfc95272917b0c6",
+      host: "https://links.test.alipay.net/",
+      bottom: "20px",
+      right: "50px",
+      opacity: 1
+    }
+    
+      
+      
+    
+    
+      
+      
+    
+  </script>
+  <script>function l(){var t=d.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://links.test.alipay.net/init.js?_=1";var e=d.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}var w=window,d=document,i=function(){i.c(arguments)};i.q=[],i.c=function(t){i.q.push(t)},w.SupportNs=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1);</script>
+  </body>
+</html>
+
+

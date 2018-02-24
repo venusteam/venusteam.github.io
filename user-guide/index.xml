@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Basement 介绍 on Venus中间件</title>
+    <link>http://venusplus.cn/user-guide/</link>
+    <description>Recent content in Basement 介绍 on Venus中间件</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>2017 Venus Plus出品</copyright>
+    <lastBuildDate>Thu, 27 Apr 2017 10:09:20 +0000</lastBuildDate>
+    
+	<atom:link href="http://venusplus.cn/user-guide/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>服务</title>
+      <link>http://venusplus.cn/user-guide/service-intro/</link>
+      <pubDate>Wed, 02 Aug 2017 13:37:54 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/service-intro/</guid>
+      <description>什么是服务？ 在 Basement 中，服务被定义为 一组功能相关的 HTTP 接口的集合。
+例如 Render 是一个页面渲染托管服务，这个服务就包括了发布页面，设置域名，查询发布历史等一些列的接口，这些接口都是有一定关联的，所以把它们都放在 Render 这个服务中。
+Basement 内置了 Render（高性能的页面渲染托管）、DB（轻量 mongodb 数据存储）和 File（静态资源托管）等稳定高效的基础服务，同时也支持服务提供者在 Basement 上发布自己的服务。
+ TO 服务使用者  1. 为什么要使用 Basement 的服务？  只需 Basement 服务账号，开箱即用 高质量文档 统一 RESTFUL 接口，易于上手 生产环境和办公环境皆可使用 重点服务保证高性能、高可用   2. 如何查看和使用所有服务？ 通过 Basement &amp;gt; 任意你所在的产品 &amp;gt; 服务 查看服务列表
+服务列表中的所有服务均包含使用文档链接，可以通过该链接获取使用帮助。你既可以调用原始的 HTTP 接口，也可以调用服务开发者提供的各种 SDK 接口。
+如果觉得文档写的太烂看，请尽情骚扰服务开发者，为你提供人工的智能帮助！
+ 3. 如何查看服务密钥 通过 Basement &amp;gt; 任意你所在的产品 &amp;gt; 设置 &amp;gt; 服务密钥
+ TO 服务开发者  1.</description>
+    </item>
+    
+    <item>
+      <title>应用研发</title>
+      <link>http://venusplus.cn/user-guide/sprint-intro/</link>
+      <pubDate>Wed, 02 Aug 2017 10:16:09 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/sprint-intro/</guid>
+      <description>Basement 为应用提供简洁稳健的研发服务。
+ 主要功能和特点  重视研发体验 深入了解各类研发方式，再量身打造与之适合的研发平台。
+流程简单，交互精简，功能轻量。
+ 重视代码管理 Basement 和 SCM 合作，提供迭代过程中规范的代码仓库和分支管理，使得研发的代码有保障。迭代采用分支开发分支发布模型，支持多个迭代并行开发
+ 重视研发质量 各类研发方式，研发质量作为必要条件，只有 ci 通过，或者部署成功，阶段流转才能进入下一阶段，为研发产物提供必要的质量保障。
+你可以访问不同应用研发的文档了解详细信息：
+  Chair 应用
+  H5 应用
+  Site 应用
+  Assets 组件
+  凤蝶模板</description>
+    </item>
+    
+    <item>
+      <title>FAQ</title>
+      <link>http://venusplus.cn/user-guide/sprint-faq/</link>
+      <pubDate>Mon, 31 Jul 2017 09:10:34 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/sprint-faq/</guid>
+      <description> 1.构建一直卡着 问题
+构建任务一直卡着，没有结束，没有自动执行部署
+原因
+一般是，构建结束后，没有收到 qcloud 回调
+解决方案
+ 进入构建列表页
+ 对当前 commit 选择重新进行构建
+这个时候，构建列表页会新增一条构建记录
+ 回到迭代详情页，重新点击部署  </description>
+    </item>
+    
+    <item>
+      <title>FAQ</title>
+      <link>http://venusplus.cn/user-guide/faq/</link>
+      <pubDate>Wed, 26 Jul 2017 12:02:04 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/faq/</guid>
+      <description>  支付宝钱包访问开发环境HTTS链接，报证书错误
+需要安装阿里郎证书，具体方法请参考 https://www.atatech.org/articles/69047#5
+  Basement 无法发布 sourcemap 文件
+处于安全考虑，生产环境无法发布 sourcemap ，如果需要测试，需要在预发环境验证
+  Basement构建前端应用，会先把 node_moudles 里面的文件清理再重新安装么？
+不建议将 node_moudles 提交到仓库每次云构建都是从仓库拉源码进行 install，因此 提交到仓库的 node_moudles 是无用的。
+  提示&amp;quot;没有操作 group 的权限，请将 ant-ued 加入到 group 的 owner 权限中&amp;quot;
+在 Basement 中，产品名和 group 的名称是相关联的，如果新增产品名在 gitlab 上已经存在，由于 Basement 需要相应的权限对仓库进行操作，因此需要将 ant-ued 加入到 该 group 的权限
+  构建出现&amp;quot;error: ERROR: problem with sign-server build: ERROR: problem with sign-server&amp;quot;
+package.json 中将 @alipay/moggles 升级到最新版本 http://web.npm.alibaba-inc.com/package/@alipay/moggles
+  </description>
+    </item>
+    
+    <item>
+      <title>Object 数据存储</title>
+      <link>http://venusplus.cn/user-guide/object/</link>
+      <pubDate>Fri, 14 Jul 2017 10:09:21 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/object/</guid>
+      <description>简介 basement.object 提供了一个 schema free 的对象存储解决方案。
+ API 文档 http://basement-jssdk.alipay.com/api/object.html
+ 命令行工具 http://web.npm.alibaba-inc.com/package/@alipay/basement-cli
+ 对象 所有存储到 basement Object 的数据都可以看做是一个个的对象，我们在存储数据之前是不需要定义这个对象的具体数据结构的。
+每一个对象都包含若干键值对（key-value)，属性值是 JSON 格式兼容的数据（string, boolean, number, object, array, null)。
+ 格式  所有的对象和键值对的 key 都必须以英文字母开头，有效的字符仅限在英文字母、数字以及下划线。 有部分保留字段，键值对的 key 不能够使用。  objectId：基于 objectId 来进行对象的更新、删除等操作。 createdAt：对象的创建时间，创建时会自动赋值，不需要自行修改。 updatedAt：对象的最近一次更新时间，每次修改对象时会自动修改。   键值对的值中有一类特殊的类型：{type: &amp;lsquo;pointer&amp;rsquo;}，如果有键值对的值是一个 hash 对象，且有 type 字段，将会当做 basement 的特殊对象处理。现在 basement 的特殊字段有 pointer, date 和 regex 三个类型。   特殊值 上面提到，当键值对的值为特定的 {type: &amp;lsquo;pointer&amp;rsquo;} 类型时，即为 basement 内置的特殊类型。
+ pointer pointer 类型是用来指向另一个对象的值使用的，它包含了 className 和 objectId 两个属性，用来提取目标对象，我们拿一个例子来说明：</description>
+    </item>
+    
+    <item>
+      <title>手把手教你发布服务</title>
+      <link>http://venusplus.cn/user-guide/sample-service/</link>
+      <pubDate>Mon, 26 Jun 2017 09:15:58 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/sample-service/</guid>
+      <description>你大概需要一刻钟来阅读本文档，浏览所有外链不是必须的，你可以在需要做进一步了解的时候再浏览它们，通过本文档，就能在 Basement 上发布自己的服务给更多的小伙伴使用。
+  需求设定 假定我们现在要提供一个名为 Sample Service 的服务，该服务提供了两个接口，一个可以自由调用的接口 GET /foo，另一个需要授权才能使用的接口 GET /bar。
+ 代码开发 我们已经为你准备了一份完整的示例代码：http://gitlab.alipay-inc.com/basement/basement-service-example （非蚂蚁的同学请下载 zip 包） 。这是一份用 Chair 框架开发的 NodeJS 代码，但只要你有基本的 WEB 开发经验，都可以很容易的理解它。让我们一起快速浏览下最关键的 3 段代码（别忽略其中的注释哦）：
+ 1. 指定路由规则 文件：app/router.js
+module.exports = function(app) { // 这是一个无需授权的接口 app.get(&amp;lsquo;/foo&amp;rsquo;, app.controllers.sample.foo); // 这是一个需要授权的接口 app.get(&amp;lsquo;/bar&amp;rsquo;, app.controllers.sample.bar); }  推荐的 HTTP API 设计：
+ 使用 RESTful API 不对 API 分版本 返回结果，包括异常均使用 JSON 格式 异常时返回 &amp;gt;=400 的状态码   2. 指定对应的控制器 文件：app/controllers/sample.js</description>
+    </item>
+    
+    <item>
+      <title>网络问题排查</title>
+      <link>http://venusplus.cn/user-guide/network/</link>
+      <pubDate>Wed, 21 Jun 2017 09:43:33 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/network/</guid>
+      <description>Basement 线上 gzone &amp;amp; rzone 同时部署，同时通过 https 对外提供 rest 服务。
+ 网络加速 为了保证网络访问最快，egg-basement 插件中对网络连接做了部分优化：
+ 蚂蚁的线上服务会通过 vip 和网络检测，直连到本机房的 Basement 服务器。 其他 BU 的线上服务或者蚂蚁的 stable 环境下，会直连到 Basement GZone 的 Spanner 上。  如果未使用 egg-basement，直接通过 Basement 提供的 sdk 来访问，需要采用下列方式来保证访问速度：
+ 一定要开启 keepalive，具体如何开启请参照快速上手。 如果知道自己的机器部署在杭州机房，请将 endpoint 设置为: https://basement-gzone.alipay.com。   降低 https 建连接的消耗 如果直接通过非 vip（服务没有部署在蚂蚁的线上机房或者没使用 egg-basement）访问 Basement，都是通过的 https 。由于 https 建立连接消耗较大（100ms 左右)，在访问量较小的情况下无法保持 keepalive 连接，所以需要应用定时请求 Basement 服务来保持心跳（通过访问 ${endpoint}/status.alipay 路径来保持心跳），以降低建立连接带来的损耗。当然，如果应用流量并不大，考虑这个问题就有点太早了。
+ 问题排查 当遇到访问 Basement 缓慢的时候，可以通过下面的命令来确认到底是哪个地方慢，再来进行针对性的优化。
+curl -w &amp;quot;DNS解析时间：%{time_namelookup}，TCP 连接建立时间: %{time_connect}, SSL 连接建立时间: %{time_appconnect}, 服务器返回第一个字节所用的时间：%{time_starttransfer}，完成请求所用的时间：%{time_total}，下载大小：%{size_download}，下载速度：%{speed_download}\n&amp;quot; -so /dev/null https://basement-gzone.</description>
+    </item>
+    
+    <item>
+      <title>产品与应用</title>
+      <link>http://venusplus.cn/user-guide/product-application-intro/</link>
+      <pubDate>Wed, 21 Jun 2017 01:55:56 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/product-application-intro/</guid>
+      <description>Basement 提供了二级的结构，即『产品』与『应用』，通过创建它们，你可以使用 Basement 的服务以及迭代研发等功能。
+ 产品  创建产品后，就可以使用 Basement 提供的 DB、File、Render 等服务功能。
+ 进入 https://basement.alipay.com/ 你可以新建或加入已有产品。Basement 为每个产品都创建了独立隔离的服务资源空间，并提供了唯一密钥（可以在“产品 - 设置 - 服务密钥”中找到）。使用它，你可以在代码里调用 Basement 提供的 DB、File、Render 等功能，更详细方式可查看服务使用文档：
+默认以产品名产生了一个密钥, 可以新增 ${prodName}-dev 来隔离环境使用密钥:
+ 应用  在产品下创建应用，就可以使用 Basement 提供的迭代管理功能。
+ 每个产品都可以拥有 0 到无限个数个应用，你可以进入 https://basement.alipay.com/ 在产品里进入或者直接新建应用。新建应用时需要指定应用类型、代码仓库等属性，成功后，你便可以创建对应的迭代对它进行开发。
+ 应用类型 每一个应用需要选择其应用类型，Basement 为不同的类型都定制了专属的迭代方案，目前 Basement 支持以下几种类型：
+ Chair 类型： 这种类型支持关联 zappinfo 的 chair 线上应用，你可以通过查看 《Chair 应用研发》 部分来详细了解此类型。 H5 类型： H5 类型的应用，主要对接需要通过 nebulamng 发布的应用。你可以通过查看 《H5 应用研发》 部分来详细了解此类型。 Site 类型： 它支持最终需要发布到蚂蚁 CDN 上的静态站点。你可以通过查看 《Site 应用研发》 部分来详细了解此类型。 Assets 组件类型： 支持最终发布到蚂蚁 CDN 上的静态资源，同时还提供了方便的版本更新通知机制。你可以通过查看 《Assets 组件研发》 部分来详细了解此类型。   代码仓库 每一个应用都需要有唯一对应的代码仓库，它会在新建应用时被创建。为了方便已有代码仓库的应用，我们也提供了直接关联已有 GitLab 代码仓库的功能，如有需要可以在联系我们。</description>
+    </item>
+    
+    <item>
+      <title>4.2.8.render 架构设计</title>
+      <link>http://venusplus.cn/user-guide/render-architecture/</link>
+      <pubDate>Thu, 25 May 2017 10:41:20 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/render-architecture/</guid>
+      <description>基于 CDN 缓存的页面渲染服务 用户直接访问的域名（render.(alipay|koubei|alipay-eco).com 等）指向 CDN，各个业务线的页面用不同的域名做隔离。CDN 页面不存在时才会回源站渲染，并缓存在 CDN 上。每次的渲染结果只缓存在 CDN（客户端无缓存），并只设置一个很短的过期时间（1~2分钟），保证页面数据更新的实时性。CDN 自身有完善的热点迁移和智能调度功能，保证服务的高可用。
+渲染源站上的 render 服务仅包含模板渲染逻辑，渲染需要的所有模板和数据都存放在 oss 上，oss 自身提供主备容灾，render 同时会对模板、数据以及渲染结果做多重备份，保证渲染源站高可用。
+凤蝶搭建和凤蝶数据是离线产出系统，负责将模板以及对应的数据推送到 oss，不会对线上渲染服务的可用性造成影响。线上渲染服务仅仅弱依赖于 oss。
+ CDN 回源链路  用户直接访问的 CDN 集群有上百个节点，提供高性能、高可用的缓存服务，支撑海量用户请求。 CDN 上数据不存在时会进行回源（多个请求会进行回源合并），请求并不会直接回源到 render 服务源站，而是经由二级缓存进行一次回源收敛，降低源站压力。 render 渲染源站部署在 Rzone，且完全无状态，每一个 zone 都能独立进行服务，确保源站高可用。   render 流程图  render 性能 render 源站单机压测报告
+由于所有的请求都由 CDN 先进行缓存，最终落到应用机器上的请求数量大幅度降低，以前是每个用户请求都需要服务器进行一次渲染，现在每一个页面在一个缓存失效周期内只需要渲染 CDN L2 节点数量的次数。
+render 的总 QPS = CDN L2 节点数量 * 在线活动页面 / 缓存失效时间
+如果 L2 有 100 个节点，缓存失效时间为 60 秒，在线活动页面为 2000 个，那么</description>
+    </item>
+    
+    <item>
+      <title>DB 数据存储</title>
+      <link>http://venusplus.cn/user-guide/db/</link>
+      <pubDate>Wed, 03 May 2017 06:56:02 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/db/</guid>
+      <description>DB 服务是 Basement 基于 MongoDB 提供的高可靠性数据存储方案。你可以通过访问《DB 服务使用手册》查看完整的文档。
+ 优势 高可靠性: 底层采用 MongoDB 三节点副本集部署，多节点冗余，并由蚂蚁专业 DBA 同学运维。
+高灵活性: 得益于 MongoDB 天然的无 schema，对于轻事务、数据结构冗余复杂的数据来说使用 MongoDB 有很高的灵活性。
+和官方 SDK 完全一致的 API: SDK 100% 按照官方接口实现，对于已经使用过官方接口的用户来说可以无缝迁移到 Basement DB
+ 不适用的场景 强事务: 如果你的业务需要有很强的事务保证，那么你需要选择 Mysql/OB 这种关系型数据库。</description>
+    </item>
+    
+    <item>
+      <title>Basement 介绍</title>
+      <link>http://venusplus.cn/user-guide/readme/</link>
+      <pubDate>Thu, 27 Apr 2017 10:09:20 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/readme/</guid>
+      <description>Basement 专注于解决 web 应用的研发时问题，主要包括 研发支撑 和 基础服务 两部分。
+使用 Basement，你可以享受简单自然的研发流程，可以使用各种稳定高效的基础服务，以快速开发出功能强劲的应用。
+ 研发支撑  Just Coding
+ Basement 提供了 Chair、H5、Site、Assets、TWA(Techless Web App) 等多种类型应用的研发支撑。它将日常中的迭代流程、代码管理、云构建、服务器部署等高频操作统统化繁为简，让你告别繁琐冗长的流程，只需不多于 4 步操作即可完成一次迭代。
+即刻在 Basement 上 创建或关联应用，享受简单而高效的迭代管理，你需要关心的，只有代码本身。
+ 基础服务  Powerful、Reliable and Simple
+ Basement 提供能支撑十亿级 PV 的页面渲染托管服务、轻量的 mongodb 数据存储服务、强大的文件同步等高质量服务，配备 HTTP(S)、JS SDK 等多种接入方式，易于上手。配套完备的服务数据与日志，让你对服务资源的使用情况了然于胸，有的放矢。
+所有这一切只需在 Basement 上 创建你的产品，使用产品关联的服务账号，即可尽情体验它带来丰富和便捷。</description>
+    </item>
+    
+    <item>
+      <title>联系我们</title>
+      <link>http://venusplus.cn/user-guide/contact-us/</link>
+      <pubDate>Wed, 15 Mar 2017 08:39:41 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/contact-us/</guid>
+      <description>钉钉群  参与我们  💡 我有一个有意思的想法 or 🙋 你们可不可以&amp;hellip;
+ 如果在使用 Basement 中遇到了问题，告诉我们 你的需求，它可能也在困扰着其他人。
+Basement will be better for you！</description>
+    </item>
+    
+    <item>
+      <title>发布公告</title>
+      <link>http://venusplus.cn/user-guide/announcement/</link>
+      <pubDate>Wed, 15 Mar 2017 08:35:21 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/announcement/</guid>
+      <description>你可以访问《Basement 发布公告》翻阅所有历史发布公告</description>
+    </item>
+    
+    <item>
+      <title>Message 消息推送</title>
+      <link>http://venusplus.cn/user-guide/message/</link>
+      <pubDate>Wed, 08 Mar 2017 11:00:35 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/message/</guid>
+      <description>Message 是一个消息推送的服务， 目前已支持邮件、旺旺、短信、钉钉。你可以访问《Basement Message 使用手册》查看完整文档。
+ 说明  短信服务由于必须带有供应商的标识，会在短信信息末尾加上[支付宝]后缀 钉钉推送服务，只支持阿里正式员工的钉钉账号推送.</description>
+    </item>
+    
+    <item>
+      <title>Filesync 文件同步</title>
+      <link>http://venusplus.cn/user-guide/filesync/</link>
+      <pubDate>Wed, 08 Mar 2017 10:24:00 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/filesync/</guid>
+      <description>Filesync 是一个快速高效的文件分发服务，且能支持 beta 发布和回滚的功能, 适用于一些将静态文件分发到服务器的场景。你可以访问《Basement Filesync 使用手册》查看完整的文档。
+ Filesync 的特点  快速，秒级分发万台机器 beta，提供 beta 发布功能，可快速回滚 全网，目前支持蚂蚁域内全网分发，覆盖生产，开发，测试环境   使用限制  Filesync 依赖于集团的 Staragent 和蜻蜓工具, 这两个是所有服务器标配的工具，如果是自己私自搭建的服务器，Filesync 将无法分发 Filesync 提供的是简单的回滚能力，如果涉及到多系统的复杂回滚，请重新发布。</description>
+    </item>
+    
+    <item>
+      <title>Render 页面渲染和托管</title>
+      <link>http://venusplus.cn/user-guide/render/</link>
+      <pubDate>Wed, 08 Mar 2017 10:23:04 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/render/</guid>
+      <description>Render 服务是一个高性能高可用的页面渲染和托管方案，并提供能满足绝大部分业务场景的动态能力。你可以访问《Basement Render 使用手册》查看完整的文档。
+ Render 的优势  高性能，CDN 抗压，支持亿级 PV。 高可用，对网络异常和渲染异常，均有降级处理方案。 速度快，CDN 节点遍布全球，用户直接访问最近的节点获取页面。   当然使用上会有一些限制  页面支持分钟级更新, 对于指定时间点支持秒级更新。 对于千人千面的数据，需要使用前端异步（RPC、TR 或 JSONP）请求解决。  如果上述两点对你的应用来说不是问题的话，那么使用 Render 是不二选择。</description>
+    </item>
+    
+    <item>
+      <title>File 文件上传</title>
+      <link>http://venusplus.cn/user-guide/file/</link>
+      <pubDate>Wed, 08 Mar 2017 10:22:50 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/file/</guid>
+      <description>File 服务是一个基于 OSS 高度定制化的文件上传服务，通过 File 你可以不用关心底层 oss/cdn 等各种存储问题，实现文件上传的开箱即用。你可以访问《Basement File 使用手册》查看完整的文档。
+ File 的优势  底层完全基于 OSS/CDN，高性能、搞可靠性，CDN QPS 日常百万+，满足所有业务需求。 丰富的接口形式，提供对文件的多环境、精细化操作。</description>
+    </item>
+    
+    <item>
+      <title>2.1.basement 错误码定义</title>
+      <link>http://venusplus.cn/user-guide/errors-code/</link>
+      <pubDate>Wed, 01 Mar 2017 07:30:21 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/errors-code/</guid>
+      <description>basement-api 错误码  请搜索 code 来查看对应信息</description>
+    </item>
+    
+    <item>
+      <title>快速上手</title>
+      <link>http://venusplus.cn/user-guide/filesync-quick-start/</link>
+      <pubDate>Wed, 22 Feb 2017 09:08:39 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/filesync-quick-start/</guid>
+      <description>一、创建预发单 首先说一下，Filesync 创建预发单，就是预发。Filesync 所有的操作都是基于预发时所创建的预发单。
+const params = { targetApps: [ &amp;lsquo;cmscenter&amp;rsquo;, &amp;lsquo;cmsfortune&amp;rsquo;, &amp;lsquo;cmspromo&amp;rsquo; ], targetDir: &amp;rsquo;/home/admin/uiweb/site/home/screen&amp;rsquo;, tag: &amp;lsquo;jssdk-test-1&amp;rsquo;, file: &amp;rsquo;/home/admin/temp/sample.txt&amp;rsquo; };
+let res = yield filesync.create(params);
+console.log(res);  返回的 res 为：
+{ sucess: true, releaseId: 76213 }  创建预发单时，tag 为必传参数。 tag 表示了这一次发布所对应的业务标识，例如：这次发布为将 活动ID为70248的凤蝶活动发布到服务器上, 那么 tag 可以设定为 fd-activity-70248。 tag 建议为 业务类型－业务唯一ID 的组合。
+ 二、查询发布状态 创建发布单成功后， 通过返回的 releaseId 来查询当前发布的状态进度.
+const res = yield filesync.status({ releaseId, });
+console.log(res);  返回的 res 为：</description>
+    </item>
+    
+    <item>
+      <title>查询发布进度</title>
+      <link>http://venusplus.cn/user-guide/filesync-query-status/</link>
+      <pubDate>Wed, 22 Feb 2017 09:08:22 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/filesync-query-status/</guid>
+      <description>预发、发布、beta发布的状态进度，都可以通过 filesync.status 来查询
+ const res = filesync.status({ releaseId, })
+console.log(res);  返回的 res 内容为：
+{ success: true, status: 2, // 状态(0:准备发布，1:发布中，2:发布完成，3:发布错误) releaseId: 76213, env: &amp;lsquo;PRE&amp;rsquo;, // 当前发布的环境(PRE:预发，PROD:线上, BETA:BETA环境) beginTime: &amp;lsquo;2017-02-22 16:43:29&amp;rsquo;, endTime: &amp;lsquo;2017-02-22 16:43:31&amp;rsquo;, serversCount: 1, // 发布的机器数量 failCount: 0, // 发布失败的机器数量 errorMessage: {} }  filesync.status 查询的为当前的发布状态进度， 想知道最终的结果是否成功，请多次轮询调用 filesync.status。 正常情况 20s 内将会发布完成， 若查过这个时间，可认为超时, 此次发布为失败。
+function* statusShouldBeSuccess(releaseId) { for (let tryTimes = 0; tryTimes &amp;lt; 8; tryTimes++) { const res = yield filesync.</description>
+    </item>
+    
+    <item>
+      <title>执行beta发布</title>
+      <link>http://venusplus.cn/user-guide/filesync-do-beta/</link>
+      <pubDate>Wed, 22 Feb 2017 08:58:13 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/filesync-do-beta/</guid>
+      <description>如果你的使用场景需要有beta发布的需求，可以通过 filesync.beta 来执行beta发布
+  注意 beta发布必须为 预发完成 状态的时候，才可执行。
+const res = yield filesync.beta({ releaseId, });
+console.log(res);  返回的 res 的内容为：
+{ success: true, releaseId: 142548, servers: { // 应用的Beta服务器 cmscenter:{ zue: &amp;lsquo;0.0.250.90&amp;rsquo;, ztg: &amp;lsquo;0.0.250.70&amp;rsquo; } } }  如果beta发布不指定beta的服务器，filesync 将会自动选择beta服务器。 目前的策略是，每个逻辑zone的第一台服务器。
+也可以通过 servers 参数来指定特定的beta服务器。
+const res = yield filesync.beta({ releaseId, servers: [ &amp;lsquo;10.244.38.169&amp;rsquo; ] });
+console.log(res);</description>
+    </item>
+    
+    <item>
+      <title>查询beta服务器</title>
+      <link>http://venusplus.cn/user-guide/filesync-query-beta-servers/</link>
+      <pubDate>Wed, 22 Feb 2017 08:57:37 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/filesync-query-beta-servers/</guid>
+      <description>如果有需求在beta发布之前，查看此次beta发布服务器的列表，可以通过 filesync.betaServers 来查询
+ const res = yield filesync.betaServers({ releaseId, });
+console.log(res);  返回的 red 内容为：
+{ success: true, releaseId: 145606, servers: { cmscenter: { zue: &amp;lsquo;0.0.250.90&amp;rsquo;, ztg: &amp;lsquo;0.0.250.70&amp;rsquo; } } }</description>
+    </item>
+    
+    <item>
+      <title>执行回滚</title>
+      <link>http://venusplus.cn/user-guide/filesync-do-rollback/</link>
+      <pubDate>Wed, 22 Feb 2017 08:53:47 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/filesync-do-rollback/</guid>
+      <description>回滚支持beta回滚，发布回滚， 仅支持简单的回滚操作，复杂的多系统回滚，请重新发布。
+  原理说明 回滚操作是基于创建预发单时的 tag 参数来进行回滚的。所以 tag 参数为必传参数， 建议组合为 业务类型-业务唯一标示。Filesync 回滚是通过 tag 来查询到最近的上一次成功发布的 release 包来重新执行一次发布。
+ 限制 例: 第一次发布a文件v1版本到A系统，第二次发布a文件v2版本到B系统，第三次发布a文件v3版本到A，B系统， 如果这时执行回滚， 无法将A系统的a文件回滚到v1版本， B系统的a文件回滚到v2版本。
+Filesync 的回滚是基于 tag 来做回滚， 而不是基于系统的维度来做回滚。
+const res = filesync.rollback({ releaseId, });
+console.log(res);  返回的 res 内容为：
+{ success: true, releaseId: 145604 }</description>
+    </item>
+    
+    <item>
+      <title>多渠道推送</title>
+      <link>http://venusplus.cn/user-guide/message-multi/</link>
+      <pubDate>Tue, 21 Feb 2017 12:06:14 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/message-multi/</guid>
+      <description>yield message.send([&#39;wangwang&#39;, &#39;email&#39;, &#39;sms&#39;], { accounts: [&#39;xuebin.gxb&#39;, &#39;hanwen.sah&#39;], message: &#39;Hi AntMessage&#39; });  </description>
+    </item>
+    
+    <item>
+      <title>钉钉推送</title>
+      <link>http://venusplus.cn/user-guide/message-dingding/</link>
+      <pubDate>Tue, 21 Feb 2017 12:05:08 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/message-dingding/</guid>
+      <description>简单文本消息推送 yield message.sendDingDing({ accounts: [&amp;lsquo;xuebin&amp;rsquo;, &amp;lsquo;hanwen.sah&amp;rsquo;], message: &amp;lsquo;Hi AntMessage&amp;rsquo; });   OA消息类型推送 yield message.sendDingDing({ accounts: [&amp;lsquo;xuebin&amp;rsquo;, &amp;lsquo;hanwen.sah&amp;rsquo;], oa: { // 手机端钉钉查看详情跳转地址 message_url: &amp;lsquo;http://dingtalk.com&#39;, // PC端钉钉查看详情跳转地址 pc_message_url: &amp;lsquo;https://fengdie.alipay.com/&#39;, head: { // 消息头部标题背景颜色, 透明度 + 颜色值 bgcolor: &amp;lsquo;FFF59F16&amp;rsquo;, }, body: { // 内容标题 title: &amp;lsquo;管理员权限审批申请&amp;rsquo;, // 内容表单 form: [ { key: &amp;lsquo;申请人&amp;rsquo;, value: &amp;lsquo;乔花&amp;rsquo;, } ], // 内容信息 content: &amp;lsquo;平台开发需要，需要申请管理员权限&amp;rsquo;, } } });
+ 效果如下：</description>
+    </item>
+    
+    <item>
+      <title>JAVA SDK</title>
+      <link>http://venusplus.cn/user-guide/midtiw/</link>
+      <pubDate>Tue, 21 Feb 2017 11:54:33 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/midtiw/</guid>
+      <description>配置客户端  普通 Java 应用  配置依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.alipay.basement&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;basement-file&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.2.0&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;   配置上传客户端 final FileClientConfig fileClientConfig = new FileClientConfig(); fileClientConfig.setAppId(&amp;quot;xxxx&amp;quot;); fileClientConfig.setMasterKey(&amp;quot;xxxx&amp;quot;); fileClientConfig.setEndpoint(&amp;quot;https://basement-gzone.alipay.com&amp;quot;); fileClientConfig.setAppName(&amp;quot;lanjue&amp;quot;); fileClientConfig.setTargetEnv(&amp;quot;DEV&amp;quot;); final DefaultFileClient fileClient = new DefaultFileClient(fileClientConfig);   Spring 应用  配置依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.alipay.basement&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;basement-file&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.2.0&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;   配置上传客户端 &amp;lt;bean id=&amp;quot;fileClientConfig&amp;quot; class=&amp;quot;com.alipay.basement.file.config.FileClientConfig&amp;quot;&amp;gt; &amp;lt;!&amp;ndash;https://basement.alipay.com 上产品的访问key&amp;ndash;&amp;gt; &amp;lt;property name=&amp;quot;appId&amp;quot; value=&amp;quot;xxxxx&amp;quot;/&amp;gt; &amp;lt;property name=&amp;quot;masterKey&amp;quot; value=&amp;quot;xxxxxx&amp;quot;/&amp;gt; &amp;lt;!&amp;ndash; 线下环境: endpoint: https://basement-gzone.alipay.com targetEnv: DEV&amp;ndash;&amp;gt; &amp;lt;!&amp;ndash; 生产环境(GZone应用): endpoint: http://basement-api.${domain_name} targetEnv: PROD &amp;ndash;&amp;gt; &amp;lt;!</description>
+    </item>
+    
+    <item>
+      <title>短信推送</title>
+      <link>http://venusplus.cn/user-guide/message-sms/</link>
+      <pubDate>Tue, 21 Feb 2017 11:43:47 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/message-sms/</guid>
+      <description>yield message.sendSms({ accounts: [&#39;xuebin&#39;, &#39;hanwen.sah&#39;], // accounts, mobiles参数同时存在， 优先mobiles mobiles: [&#39;13976682736&#39;, &#39;13892273212&#39;], message: &#39;Hi AntMessage&#39; });  </description>
+    </item>
+    
+    <item>
+      <title>邮件推送</title>
+      <link>http://venusplus.cn/user-guide/message-email/</link>
+      <pubDate>Tue, 21 Feb 2017 11:43:16 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/message-email/</guid>
+      <description>yield message.sendEmail({ accounts: [&#39;xuebin.gxb&#39;, &#39;hanwen.sah&#39;], // accounts, addresses 参数同时存在，优先addresses addresses: [&#39;xuebin.gxb@aliabab-inc.com&#39;, &#39;hanwen.sah@taobao.com&#39;], message: &#39;Hi AntMessage&#39;, // 若无subject参数，默认邮件标题 [来自AntMessage的邮件] subject: &#39;这是一个标题&#39;, });  </description>
+    </item>
+    
+    <item>
+      <title>旺旺推送</title>
+      <link>http://venusplus.cn/user-guide/message-wangwang/</link>
+      <pubDate>Tue, 21 Feb 2017 11:42:46 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/message-wangwang/</guid>
+      <description>yield message.sendWangWang({ accounts: [&#39;xuebin.gxb&#39;, &#39;hanwen.sah&#39;], // accounts, wangwangs参数同时存在，优先wangwangs wangwangs: [&#39;慧玄&#39;, &#39;翰文&#39;], message: &#39;Hi AntMessage&#39; });  </description>
+    </item>
+    
+    <item>
+      <title>简介</title>
+      <link>http://venusplus.cn/user-guide/message-intro/</link>
+      <pubDate>Tue, 21 Feb 2017 11:39:55 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/message-intro/</guid>
+      <description>Message 是一个消息推送的服务， 目前已支持邮件、旺旺、短信、钉钉。
+ 说明  短信服务由于必须带有供应商的标识，会在短信信息末尾加上[支付宝]后缀 钉钉推送服务，只支持阿里正式员工的钉钉账号推送.</description>
+    </item>
+    
+    <item>
+      <title>简介</title>
+      <link>http://venusplus.cn/user-guide/filesync-intro/</link>
+      <pubDate>Tue, 21 Feb 2017 10:54:27 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/filesync-intro/</guid>
+      <description>Filesync 是一个快速高效的文件分发服务，且能支持beta发布和回滚的功能, 适用于一些将静态文件分发到服务器的场景
+ Filesync的特点  快速，秒级分发万台机器 beta，提供 beta 发布功能，可快速回滚 全网，目前支持蚂蚁域内全网分发，覆盖生产，开发，测试环境   使用限制  Filesync 依赖于集团的 Staragent 和蜻蜓工具, 这两个是所有服务器标配的工具，如果是自己私自搭建的服务器，Filesync 将无法分发 Filesync 提供的是简单的回滚能力，如果涉及到多系统的复杂回滚，请重新发布。   Filesync的原理  +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+ 2 | | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+ | sdk | 1 | | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+ v +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+ | | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+ | | | | | | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+ v | filesync server | | | 5 | | +&amp;mdash;&amp;gt; | server01 +&amp;mdash;&amp;mdash;&amp;mdash;&amp;gt; +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+ +&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;+ | | | | | | | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+ | | |3 | | OSS | | | | | v | | | | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+ 5 | | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+ | | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;gt; +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+ | | 4 | | server02 | | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;gt; | | ^ | staragent manager | | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+ | | | | | | | | | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+ | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+ 5 | | | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+ +&amp;mdash;-&amp;gt; | server03 | | | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+</description>
+    </item>
+    
+    <item>
+      <title>创建预发单</title>
+      <link>http://venusplus.cn/user-guide/filesync-create-prerelease/</link>
+      <pubDate>Tue, 21 Feb 2017 08:55:05 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/filesync-create-prerelease/</guid>
+      <description>创建预发单，可以支持多种形式的内容，如：本地文件， 本地targz包， 字符串buffer流，ossUrl地址。
+  将一个本地文件发布到应用服务器的目标目录 const params = { targetApps: [ &amp;lsquo;cmscenter&amp;rsquo;, &amp;lsquo;cmspromo&amp;rsquo; ], targetDir: &amp;rsquo;/home/admin/uiweb/site/home/screen&amp;rsquo;, file: path.join(__dirname, &amp;rsquo;./fixtures/sample.txt&amp;rsquo;), tag: &amp;lsquo;jssdk-test-1&amp;rsquo;, };
+yield filesync.create(params);   将一个本地targz包发布解压到应用服务器的目标目录 const params = { targetApps: [ &amp;lsquo;cmscenter&amp;rsquo;, &amp;lsquo;cmspromo&amp;rsquo; ], targetDir: &amp;rsquo;/home/admin/uiweb/site/home/screen&amp;rsquo;, targz: path.join(__dirname, &amp;rsquo;./fixtures/sample.tgz&amp;rsquo;), tag: &amp;lsquo;jssdk-test-1&amp;rsquo;, };
+yield filesync.create(params);
+  将oss上的一个targz包发布解压到应用服务器的目标目录 const params = { targetApps: [ &amp;lsquo;cmscenter&amp;rsquo;, &amp;lsquo;cmspromo&amp;rsquo; ], targetDir: &amp;rsquo;/home/admin/uiweb/site/home/screen&amp;rsquo;, ossUrl: &amp;lsquo;http://alipay-rmsdeploy-image.cn-hangzhou.alipay.aliyun-inc.com/rmsportal/scCkJsslgPOKYvh.tar.gz&#39;, tag: &amp;lsquo;jssdk-test-1&amp;rsquo;, };
+yield filesync.create(params);   将字符内容发布到应用服务器的目标文件 const buffer = new Buffer(&amp;quot;I&amp;rsquo;m buffer&amp;quot;, &amp;quot;utf-8&amp;quot;);</description>
+    </item>
+    
+    <item>
+      <title>执行发布</title>
+      <link>http://venusplus.cn/user-guide/filesync-do-release/</link>
+      <pubDate>Tue, 21 Feb 2017 08:54:46 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/filesync-do-release/</guid>
+      <description>通过 releaseId 即可发布， 轮询 filesync.status 来查询发布进度
+ const res = yield filesync.publish({ releaseId, });</description>
+    </item>
+    
+    <item>
+      <title>FAQ</title>
+      <link>http://venusplus.cn/user-guide/filesync-faq/</link>
+      <pubDate>Tue, 21 Feb 2017 08:51:36 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/filesync-faq/</guid>
+      <description>线上服务器如果没有预装 staragent，该如何处理?  可以联系PE处理，预装staragent和蜻蜓。正常情况线上服务器会预装这些工具，除非staragent有问题。 Filesync 目前会采取补偿方案，通过 zpublish 来发布到这些服务器上。 如果是服务器挂掉了， 就没有办法了。 对于线下服务器，没有预装 staragent, 可以自己通过 admin 权限把staragent预装下。
+ 如果服务器不在蚂蚁域内，如何使用 Filesync?  目前 Filesync 申请的 staragent 权限为蚂蚁域内的权限， 可以联系 @陆辉，@慧玄， 开通蚂蚁域外的权限。
+ Filesync 发布失败， 自己可以如何排查?  Filesync 发布失败， 将会返回错误信息。错误信息里面，包含了具体服务器 IP 以及对应的错误信息。也可登录服务器通过 /home/admin/staragent/logs 用 releaseId 为关键字，来查询本次发布的 staragent 日志</description>
+    </item>
+    
+    <item>
+      <title>HTTP API</title>
+      <link>http://venusplus.cn/user-guide/ul2psu/</link>
+      <pubDate>Tue, 21 Feb 2017 07:03:04 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/ul2psu/</guid>
+      <description>Basement File 的 API 完全居于 HTTP 提供，你可以使用任何你喜欢的语言使用我们的服务。对于 Java和 Node 的用户，我们强烈建议使用已封装好的 SDK.
+ 文件上传接口  POST /api/1.0/files/:env/:targetPath?fileName=1.jpg&amp;amp;targetEnv=dev
+  请求参数    Name In Type Required Default Description     env path String 是 无 文件上传的目标环境，详见部署环境说明   targetPath path String 否 无 文件上传后存储的自定义路径，如果该值不传则返回随机路径的URL，如果传入该值则返回该值对应的URL   fileName query String 是 无 上传的文件的文件名，必填   targetEnv query String 是 无 使用的服务环境。DEV: 开发环境使用，PROD: 生产环境使用   x-base-id header String 是 无 basement.</description>
+    </item>
+    
+    <item>
+      <title>环境说明</title>
+      <link>http://venusplus.cn/user-guide/mwo8nb/</link>
+      <pubDate>Mon, 20 Feb 2017 11:45:13 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/mwo8nb/</guid>
+      <description>文件存储环境说明 Basement File 底层存储完全基于 OSS ,通过不同的网络和 endpoint 划分出了如下几个环境:
+ PUBLIC(公网环境):  通过 CDN 进行访问，QPS 可达百万级，适合需要把文件放到公网的所有用户。
+  INTERNAL(公司内网环境):  直接访问 OSS ,文件只能在内网中访问，其他环境无法访问到。
+  PRIVATE(私有文件):  使用这种方式存储的文件不能直接访问，必须通过 SDK 提供的授权接口获取有时效性的授权链接后才可以访问。
+  STRICT(防盗链环境):  使用这种方式上传的文件可以在 CDN 上配置防盗链的规则，一般不太使用。
+  NET(沙箱环境)  沙箱环境，主要服务于公司的沙箱环境中的系统，不能直接用于生产业务。
+    服务 endpoint 配置说明  Basement File 是服务型应用，不区分 stable 环境和生产环境，所以服务统一使用 Basement 线上环境 endpoint，然后通过 targetEnv 参数区分线上或线下环境。</description>
+    </item>
+    
+    <item>
+      <title>2.客户端选择与配置</title>
+      <link>http://venusplus.cn/user-guide/client-and-config/</link>
+      <pubDate>Mon, 20 Feb 2017 10:29:15 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/client-and-config/</guid>
+      <description>仅需两步，即可使用 Basement 提供的各种服务。
+ 1. 在 Basement 上创建应用 访问 Basement , 填写相关信息即可创建一个应用
+ 应用创建成功后，你会获得 appId 和 masterKey，请妥善保管该信息。 同时注意，应用一旦创建，应用名无法修改。   环境 Basement 提供开发和生产两种环境，跟你的应用环境为如下对应关系：
+   Basement 环境 API 入口 你的应用环境     prod https://basement-api.alipay.com prod, pre   gzone https://basement-gzone.alipay.com 预发、生产环境，这个域名直接指向 gzone 的 Basement 服务，如果你的应用部署在非线上机房，使用这个 endpoint 会更快     2. 选择合适的使用方式  Cli 工具 如果你希望快速体验 Basement 提供的各种服务, 或者进行一些简单的操作, Cli 工具会十分方便.
+具体的配置和试用方式请参见 Cli 工具文档
+ Chair/Egg 插件 适用于 Chair/Egg 应用</description>
+    </item>
+    
+    <item>
+      <title>快速上手</title>
+      <link>http://venusplus.cn/user-guide/cu373w/</link>
+      <pubDate>Mon, 20 Feb 2017 09:40:43 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/cu373w/</guid>
+      <description>node 用户  安装 basement sdk tnpm i @alipay/basement co urllib &amp;ndash;save   示例 新建 index.js 文件，然后添加如下代码
+const Basement = require(&amp;rsquo;@alipay/basement&amp;rsquo;); const urllib = require(&amp;lsquo;urllib&amp;rsquo;); const co = require(&amp;lsquo;co&amp;rsquo;);
+const basement = new Basement({ appId: &amp;lsquo;5885827c9a7934057979d4db&amp;rsquo;, masterKey: &amp;lsquo;1csgxwXVuI_t05UK_EheY7NN&amp;rsquo;, urllib, endpoint: &amp;lsquo;http://basement-api.stable.alipay.net&#39; }); co(function* () { const ret = yield basement.file.upload(&amp;lsquo;1.txt&amp;rsquo;, new Buffer(&amp;lsquo;test content&amp;rsquo;)); console.log(ret) }).catch(e =&amp;gt; { console.log(e); });
+  结果输出 $node index.js { ETag: &amp;lsquo;9473FDD0D880A43C21B7778D34872157&amp;rsquo;, name: &amp;lsquo;1.</description>
+    </item>
+    
+    <item>
+      <title>简介</title>
+      <link>http://venusplus.cn/user-guide/file-jianjie/</link>
+      <pubDate>Mon, 20 Feb 2017 07:31:42 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/file-jianjie/</guid>
+      <description>File 服务是一个基于 OSS 高度定制化的文件上传服务，通过 File 你可以不用关心底层 oss/cdn 等各种存储问题，实现文件上传的开箱即用。
+ File 的优势  底层完全基于 OSS/CDN，高性能、搞可靠性，CDN QPS 日常百万+，满足所有业务需求。 丰富的接口形式，提供对文件的多环境、精细化操作。   File 的工作原理 写文件
+读文件</description>
+    </item>
+    
+    <item>
+      <title>AntCdn HTTP API</title>
+      <link>http://venusplus.cn/user-guide/antcdn-http-api/</link>
+      <pubDate>Mon, 20 Feb 2017 02:43:02 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/antcdn-http-api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Render 域名配置</title>
+      <link>http://venusplus.cn/user-guide/render-domain/</link>
+      <pubDate>Fri, 17 Feb 2017 07:28:42 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/render-domain/</guid>
+      <description>迁移至 Render 使用手册</description>
+    </item>
+    
+    <item>
+      <title>Search 搜索</title>
+      <link>http://venusplus.cn/user-guide/search/</link>
+      <pubDate>Fri, 17 Feb 2017 05:49:53 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/search/</guid>
+      <description>如果你还没有设置你的项目，请先阅读 客户端选择与配置。
+ 简介 basement.search 基于阿里云 OpenSearch 为你的网站或应用程序提供简单、低成本，且稳定高效的搜索解决方案。
+basement.search 爬虫会定时爬取内网中各技术站点和文档页面。你可以通过配置需要在搜索结果中展示的站点 URL，来实现定制化的搜索。
+本文档可能没有完全覆盖所有的 API，请对照 basement.search 的 API 文档 进行阅读。
+ 注意事项  basement.search 相关的所有方法都是一个 generatorFunction。 所有接口在失败或出现错误时，都会抛出异常。所有的异常都有 code 字段，可以用 code 到 错误码详解 中查询到详细的错误原因和解决方案。   管理 URL 如果需要定制化搜索，可以通过配置搜索结果中需要展示站点的 URL 来实现。
+例如，在配置中添加了 http://your_domain 之后，该站点下匹配的内容将被允许在搜索结果中展示。
+ 创建 URL 当我们要在搜索结果中展示站点 http://node.alibaba-inc.com 下的内容，可以通过以下操作：
+const search = new Basement(config).search; const res = yield search.addUrl(&#39;http://node.alibaba-inc.com&#39;);   返回 如果创建成功，将会返回一个对象，包含 _id 、 createdAt 、 url 等字段。
+其中，_id 是这个 URL 创建的唯一 id，后续对这个 URL 的任何修改都基于此 id。</description>
+    </item>
+    
+    <item>
+      <title>AntCdn 服务</title>
+      <link>http://venusplus.cn/user-guide/antcdn-intro/</link>
+      <pubDate>Fri, 17 Feb 2017 05:13:47 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/antcdn-intro/</guid>
+      <description> Render 域名配置 </description>
+    </item>
+    
+    <item>
+      <title>3.CLI 工具</title>
+      <link>http://venusplus.cn/user-guide/cli/</link>
+      <pubDate>Wed, 15 Feb 2017 06:13:03 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/cli/</guid>
+      <description> basement-cli </description>
+    </item>
+    
+    <item>
+      <title>4.2.11.常见问题</title>
+      <link>http://venusplus.cn/user-guide/render-faq/</link>
+      <pubDate>Mon, 13 Feb 2017 10:56:08 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/render-faq/</guid>
+      <description> 常见问题 </description>
+    </item>
+    
+    <item>
+      <title>4.2.9.render 动态数据读写</title>
+      <link>http://venusplus.cn/user-guide/render-dynamic-data/</link>
+      <pubDate>Mon, 13 Feb 2017 10:55:31 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/render-dynamic-data/</guid>
+      <description> Render 使用手册 </description>
+    </item>
+    
+    <item>
+      <title>4.2.8.render 灰度发布</title>
+      <link>http://venusplus.cn/user-guide/render-grey-release/</link>
+      <pubDate>Mon, 13 Feb 2017 10:55:24 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/render-grey-release/</guid>
+      <description> Render 使用手册 </description>
+    </item>
+    
+    <item>
+      <title>4.2.7.render 回滚发布</title>
+      <link>http://venusplus.cn/user-guide/render-rollback/</link>
+      <pubDate>Mon, 13 Feb 2017 10:55:16 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/render-rollback/</guid>
+      <description> Render 使用手册 </description>
+    </item>
+    
+    <item>
+      <title>4.2.6.预发环境验证方案</title>
+      <link>http://venusplus.cn/user-guide/render-prepub-env/</link>
+      <pubDate>Mon, 13 Feb 2017 10:55:08 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/render-prepub-env/</guid>
+      <description> Render 使用手册 </description>
+    </item>
+    
+    <item>
+      <title>4.2.4.数据区块解决方案</title>
+      <link>http://venusplus.cn/user-guide/render-data-block/</link>
+      <pubDate>Mon, 13 Feb 2017 10:54:50 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/render-data-block/</guid>
+      <description> Render 使用手册 </description>
+    </item>
+    
+    <item>
+      <title>4.2.2.render 提供的 helper 方法</title>
+      <link>http://venusplus.cn/user-guide/render-helper/</link>
+      <pubDate>Mon, 13 Feb 2017 10:54:37 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/render-helper/</guid>
+      <description> Render 使用手册 </description>
+    </item>
+    
+    <item>
+      <title>4.2.1.pack 目录规范和配置文件书写规范</title>
+      <link>http://venusplus.cn/user-guide/render-config/</link>
+      <pubDate>Mon, 13 Feb 2017 10:54:22 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/render-config/</guid>
+      <description> Render 使用手册 </description>
+    </item>
+    
+    <item>
+      <title>7.RESTFul API</title>
+      <link>http://venusplus.cn/user-guide/restful-api/</link>
+      <pubDate>Fri, 06 Jan 2017 00:47:23 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/restful-api/</guid>
+      <description>Basement 的所有服务均通过 RESTFul API 的形式开放给用户，因此你可以使用任意语言根据本 API 来
+调用 Basement 的服务。当然如果你使用的语言有对应的 SDK，那么我们推荐你优先使用 SDK，因为 SDK
+会自动帮你处理好很多琐碎的细节问题，这比直接调用本 API 要简单很多。
+如果你还没有设置你的项目，请先阅读 客户端选择与配置。
+ 参数说明 为了便于理解，我们用几个具体的例子来演示 API 的调用。
+注意
+ 本 API 中的所有例子均会以 curl 命令做演示。 除本页展示的例子，具体的 API 调用和返回示例，JSON 格式的字符串可能以等价 JSON 数据展示。  假定我们想调用 render 的服务上传一个简单的 pack，代码如下：
+curl -X PUT -H &amp;quot;x-base-id:${appId}&amp;quot; -H &amp;quot;x-base-masterkey:${masterKey}&amp;quot; -H &amp;quot;content-type: application/json&amp;quot; -d &amp;lsquo;{&amp;quot;name&amp;quot;:&amp;quot;hello_render&amp;quot;,&amp;quot;pack&amp;quot;:{&amp;quot;index.html&amp;quot;: &amp;quot;hello {{ name }}!&amp;quot;,&amp;quot;index.json&amp;quot;:&amp;quot;{&amp;amp;quot;name&amp;amp;quot;: &amp;amp;quot;render&amp;amp;quot;}&amp;quot;}}&amp;rsquo; -i ${endPoint}/api/1.0/renders  返回的 body 形如：
+{&amp;quot;updatedAt&amp;quot;:&amp;quot;Mon, 29 Aug 2016 03:59:03 GMT&amp;quot;,&amp;quot;md5&amp;quot;:&amp;quot;E0E303057BFC2B7FDB9F180236042997&amp;quot;}  然后你希望通过 render 的查询功能查询刚刚上传的 pack：</description>
+    </item>
+    
+    <item>
+      <title>8.开发者指南</title>
+      <link>http://venusplus.cn/user-guide/dev-guide/</link>
+      <pubDate>Tue, 27 Dec 2016 05:49:28 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/dev-guide/</guid>
+      <description>代码仓库  basement basement SDK, Cli 工具, 框架插件, 文档等   URL    环境 API 入口 page 入口     prod https://basement-api.alipay.com https://render.alipay.com   stable http://basement-api.stable.alipay.net http://render.stable.alipay.net   pre https://basement-pre.alipay.net https://render-pre.alipay.net   dev http://basement-local.alipay.net:7001 http://render-local.alipay.net:7001     如何提交一个 mr   开发一个新特性之前，请先 建立 issue，写下技术方案, 原型等，跟小伙伴们讨论达成一致.
+  从 雨燕 获取最近的迭代分支，修改完毕后 mr 至该分支, 确保:
+ 遵循已有编码风格和规范 ci 通过 (附 使用 ava 进行测试的最佳实践) 包含对应的 js-sdk 和 文档 mr 链接    代码 review 通过后才可以合并, 请勿自行合并.</description>
+    </item>
+    
+    <item>
+      <title>9.Change Log</title>
+      <link>http://venusplus.cn/user-guide/change-log/</link>
+      <pubDate>Fri, 23 Dec 2016 06:42:41 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/change-log/</guid>
+      <description>1.8.0 / 2016-09-12  feat: 使用新 log feat(dashboard): render 控制面板增加设置域名映射和查询 pack 功能 feat(render): 自定义域名 api 中可以指定 404, 50x 和 expired feat(render): domain map 的生产环境缓存时间改为 2 分钟 feat(render): 在服务端校验 pack 的 md5 feat(render): 添加回源时的健康检查   1.7.1 / 2016-08-17  fix: rmsdeploy 查询结果接口改动! fix(render): 修复渲染时的 timepoints 判断 feat: 线下环境使用线下 oss, 线上 oss 使用内网域名 fix(dashboard): 应用删除成功后要修改 store 信息 feat(render): 上传的 pack 返回 md5 chore(render): 删除冗余方法 feat: 使用 rmsdeploy-pool 域名 fix(dashboard): 修复前端 appname 校验和后端规则不一致的问题 fix: dashboar首页调整   1.</description>
+    </item>
+    
+    <item>
+      <title>8.1.basement 服务错误码规范</title>
+      <link>http://venusplus.cn/user-guide/error-code/</link>
+      <pubDate>Fri, 23 Dec 2016 06:42:29 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/error-code/</guid>
+      <description>当服务调用发生异常时, 除了要返回合适的 http status, 还要在 body 中返回 JSON 格式的错误信息, 字段如下:
+ {int} code - 带业务含义的错误码 {String} name - 错误名称 {String} [desc] - 简短的错误描述, 开发者需要根据实际情况决定是否添加 {String} [doc] - 文档链接, 对于比较复杂的错误, 用户可以根据文档链接获取更多帮助 {object} [addition] - JSON 格式的辅助信息  举个例子, 如果调用 Render 的预览接口, 但是渲染发生了错误, 那么返回的异常信息看起来大概是下面这个样子:
+http status 500 { code: 201, name: &amp;lsquo;Render Error&amp;rsquo;, doc: &amp;lsquo;http://docurl&#39;, addition: { templ: &amp;lsquo;template file name&amp;rsquo;, pos: &amp;lsquo;111:12&amp;rsquo;, error: &amp;lsquo;detailed error description&amp;rsquo;, } }</description>
+    </item>
+    
+    <item>
+      <title>5.JS SDK API</title>
+      <link>http://venusplus.cn/user-guide/wip/</link>
+      <pubDate>Mon, 12 Dec 2016 09:26:34 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/user-guide/wip/</guid>
+      <description>访问此地址查看: http://site.alipay.net/basement/js-sdk/</description>
+    </item>
+    
+  </channel>
+</rss>

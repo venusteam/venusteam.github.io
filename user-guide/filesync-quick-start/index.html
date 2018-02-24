@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="base-url" content="http://venusplus.cn/">
+    <link type="image/png" href="/images/head.png" rel="shortcut icon" />
+    <base href="http://venusplus.cn/">
+    <link rel="stylesheet" href="css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_18677_3gesaak2gctyb9.css">
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/vendor/antd.min.css" rel="stylesheet">
+    <link href="css/vendor/swiper.min.css" rel="stylesheet">
+    <title>Venus中间件-快速上手</title>
+    <script src="js/vendor/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.min.js" type="text/javascript" charset="utf-8"></script>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+  </head>
+  <body data-url="/user-guide/filesync-quick-start/" class="theme">
+    
+<div class="header">
+  <div>
+    <div class="header-wrapper">
+      <div class="header-logo">
+        <a href=/>
+          <img src="/images/logo.png" alt="">
+        </a>
+      </div>
+      <ul class="sofa-menu ant-menu ant-menu-horizontal ant-menu-light ant-menu-root" role="menu">
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/">首页</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="product-menu">
+                <div class="product-menu-wrapper">
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">快速开发框架</div>
+                      
+                        <a href=/product/venus class="product-menu-title-link">Venus</a>
+                      
+                        <a href=/product/venusboot class="product-menu-title-link">Venus Boot</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">微服务框架</div>
+                      
+                        <a href=/product/venus-cloud class="product-menu-title-link">Venus Cloud</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">经典中间件</div>
+                      
+                        <a href=/product/talos class="product-menu-title-link">Talos网关</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">数据中间件</div>
+                      
+                        <a href=/product/venus-dts class="product-menu-title-link">Venus DTS</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">工具和公共类库</div>
+                      
+                        <a href=/product/venus-codegen class="product-menu-title-link">Venus CodeGen</a>
+                      
+                    </div>
+                  
+                </div>
+              </div>
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="javascript:;">产品</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">文档</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">控制台</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">关于我们</a>
+                
+                
+                
+              </div>
+          </li>
+        
+
+      </ul>
+      <div class="sofa-menu-right pull-right">
+       
+        <div class="search">
+          <span class="ant-input-group-wrapper" style="width: 262px;">
+            <span class="ant-input-wrapper ant-input-group">
+              
+              <span class="ant-input-search ant-input-affix-wrapper">
+                <form class="search-form" action=/search method="get">
+                    <input type="text" name="q" placeholder="请输入搜索内容" value="" class="ant-input" autocomplete="off" />
+                    <input type="hidden" name="title" value="新人上手">
+                </form>
+                <span class="ant-input-suffix">
+                  <i class="anticon anticon-search ant-input-search-icon"></i>
+                </span>
+              </span>
+            </span>
+          </span>
+        </div>
+
+       
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="main">
+      
+  
+  
+    <div class="pg-artical " id="pg-artical">
+      <div class="wrap">
+        
+<div class="nav-section">
+  <div class="navbar">
+    <span class="larkicon larkicon-toc"></span>
+  </div>
+  <nav class="nav-container">
+    <ul class="catalog">
+      
+        
+        <li class="current-book">
+          <span class="name">新人上手3</span>
+          <div class="liebiao-wrapper">
+            
+              <i id="title-liebiao-icon" class="title-liebiao-icon iconfont icon-liebiao"></i>
+            
+
+            <div class="docs-map">
+              <div class="docs-map-wrapper">
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">开发框架</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/#">Venus Framework</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">微服务框架</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/twa">Venus Cloud</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">中间件</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/talos">Talos网关</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">数据库中间件</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/venus-dts">DTS</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">工具类</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/venus-codegen">CodeGen</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">帮助中心</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/user-guide">新人上手</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+              </div>
+            </div>
+          </div>
+
+        </li>
+        
+          <li class="nav-item depth1   " data-currentPath="1" data-rootPath="1"><a href="user-guide/readme" class="">
+              简介
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="2" data-rootPath="2"><a href="user-guide/product-application-intro" class="">
+              产品与应用
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="3" data-rootPath="3"><a href="user-guide/sprint-intro" class="">
+              应用研发
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="4" data-rootPath="4"><a href="user-guide/service-intro" class="">
+              服务
+            </a></li>
+        
+      
+    </ul>
+  </nav>
+</div>
+
+        <div class="main-container">
+          <div id="page-toc"></div>
+          <div class="artical-section larksite">
+    <div class="doc-article">
+      <article class="doc-article-inner">
+        <div class="typo">
+          <h1 class="typo-title" itemprop="title">
+          快速上手
+          </h1>
+          <p class="meta">更新时间: <span>2017-2-22</span></p>
+          <div class="typo-content">
+            <p><h2 id="一、创建预发单"><a class="anchor" href="#%E4%B8%80%E3%80%81%E5%88%9B%E5%BB%BA%E9%A2%84%E5%8F%91%E5%8D%95"><span class="octicon octicon-link"></span></a> 一、创建预发单</h2>
+<p>首先说一下，Filesync 创建预发单，就是<code>预发</code>。Filesync 所有的操作都是基于预发时所创建的预发单。</p>
+<pre><code class="lang-js hljs raw"><span class="hljs-keyword">const</span> params = {
+  <span class="hljs-attr">targetApps</span>: [ <span class="hljs-string">&lsquo;cmscenter&rsquo;</span>, <span class="hljs-string">&lsquo;cmsfortune&rsquo;</span>, <span class="hljs-string">&lsquo;cmspromo&rsquo;</span> ],
+  <span class="hljs-attr">targetDir</span>: <span class="hljs-string">&rsquo;/home/admin/uiweb/site/home/screen&rsquo;</span>,
+  <span class="hljs-attr">tag</span>: <span class="hljs-string">&lsquo;jssdk-test-1&rsquo;</span>,
+  <span class="hljs-attr">file</span>: <span class="hljs-string">&rsquo;/home/admin/temp/sample.txt&rsquo;</span>
+};</p>
+
+<p><span class="hljs-keyword">let</span> res = <span class="hljs-keyword">yield</span> filesync.create(params);</p>
+
+<p><span class="hljs-built_in">console</span>.log(res);
+</code></pre>
+<p>返回的 <code>res</code> 为：</p>
+<pre><code class="lang-js hljs raw">{
+  <span class="hljs-attr">sucess</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">releaseId</span>: <span class="hljs-number">76213</span>
+}
+</code></pre>
+<p>创建预发单时，<code>tag</code> 为必传参数。 <code>tag</code> 表示了这一次发布所对应的业务标识，例如：这次发布为将 活动ID为70248的凤蝶活动发布到服务器上, 那么 tag 可以设定为 <code>fd-activity-70248</code>。 tag 建议为 <code>业务类型－业务唯一ID</code> 的组合。</p>
+<h2 id="二、查询发布状态"><a class="anchor" href="#%E4%BA%8C%E3%80%81%E6%9F%A5%E8%AF%A2%E5%8F%91%E5%B8%83%E7%8A%B6%E6%80%81"><span class="octicon octicon-link"></span></a> 二、查询发布状态</h2>
+<p>创建发布单成功后， 通过返回的 <code>releaseId</code> 来查询当前发布的状态进度.</p>
+<pre><code class="lang-js hljs raw"><span class="hljs-keyword">const</span> res = <span class="hljs-keyword">yield</span> filesync.status({
+  releaseId,
+});</p>
+
+<p><span class="hljs-built_in">console</span>.log(res);
+</code></pre>
+<p>返回的 <code>res</code> 为：</p>
+<pre><code class="lang-js hljs raw">{ <span class="hljs-attr">success</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">status</span>: <span class="hljs-number">2</span>,  <span class="hljs-comment">// 状态(0:准备发布，1:发布中，2:发布完成，3:发布错误)</span>
+  releaseId: <span class="hljs-number">76213</span>,
+  <span class="hljs-attr">env</span>: <span class="hljs-string">&lsquo;PRE&rsquo;</span>, <span class="hljs-comment">// 当前发布的环境(PRE:预发，PROD:线上, BETA:BETA环境)</span>
+  beginTime: <span class="hljs-string">&lsquo;2017-02-22 16:43:29&rsquo;</span>,
+  <span class="hljs-attr">endTime</span>: <span class="hljs-string">&lsquo;2017-02-22 16:43:31&rsquo;</span>,
+  <span class="hljs-attr">serversCount</span>: <span class="hljs-number">1</span>, <span class="hljs-comment">// 发布的机器数量</span>
+  failCount: <span class="hljs-number">0</span>, <span class="hljs-comment">// 发布失败的机器数量</span>
+  errorMessage: {}
+}
+</code></pre>
+<p>由于 Filesync 发布需要一段时间，需要轮询<code>filesync.status</code> 查看当前发布的进度。</p>
+<h2 id="三、正式发布"><a class="anchor" href="#%E4%B8%89%E3%80%81%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83"><span class="octicon octicon-link"></span></a> 三、正式发布</h2>
+<p>当预发成功并验证完成后， 可通过 <code>releaseId</code> 将此次发布正式发布上线。</p>
+<pre><code class="lang-js hljs raw"><span class="hljs-keyword">const</span> res = <span class="hljs-keyword">yield</span> filesync.publish({
+  releaseId,
+});</p>
+
+<p><span class="hljs-built_in">console</span>.log(res);
+</code></pre>
+<p>返回的 <code>res</code> 为：</p>
+<pre><code class="lang-js hljs raw">{ <span class="hljs-attr">success</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">releaseId</span>: <span class="hljs-number">145602</span> }
+</code></pre>
+<p>调用发布成功后， 可通过 <code>releaseId</code> 参数调用 <code>filesync.status</code> 来查询当前的发布状态和进度</p></p>
+
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+    <div class="mask hidden"></div>
+    
+      <script src="https://gw.alipayobjects.com/as/g/lark/site-toc/2.0.9/toc.js"></script>
+<script>
+  $('#page-toc').generateToc({
+    contentContainer: $('.typo'),
+    hasFirstLevelHeader: false,
+    offsetTop: 0,
+    affix: {
+      bgColor: "transparent",
+    },
+  })
+</script>
+
+    
+  
+
+    </div>
+    <div class="ant-row footer" style="background-image: linear-gradient(180deg,#050b22 0,#050b22 50%,#032158);">
+  <div class="footer-content">
+    <div class="ant-row footer-desc">
+      <div class="ant-col-8 ant-col-offset-2 footer-team">
+        <h4>我们的团队</h4>
+        <p>中国，上海</p>
+      </div>
+      <div class="ant-col-4 ant-col-offset-2 footer-friend">
+        <h4>友情链接</h4>
+        <p>
+          <a href="http://xujin.org">许进沉思录</a>
+        </p>
+        <p>
+          <a href="https://springcloud.cn">Spring Cloud中国社区</a>
+        </p>
+
+      </div>
+      <div class="ant-col-6 ant-col-offset-2 footer-contact">
+        <h4>联系我们</h4>
+        <p>业务咨询：<a href="mailto: Software_King@qq.com">Software_King@qq.com</a></p>
+        <p>技术咨询：<a href="mailto: Software_King@qq.com">Software_King@qq.com</a></p>
+        
+      </div>
+    </div>
+    <div class="copyright">
+      Venus Plus版权所有 &copy; 2017-2020 Venus中间件团队体系  Powered by xujin.org
+    </div>
+  </div>
+</div>
+
+
+    
+    <div style="display: none">
+    <script src="https://s19.cnzz.com/z_stat.php?id=1268345961&web_id=1268345961" language="JavaScript"></script>
+    </div>
+    
+    <script>
+    window.SupportConfig = {
+      appId: "5a027aa32cfc95272917b0c6",
+      host: "https://links.test.alipay.net/",
+      bottom: "20px",
+      right: "50px",
+      opacity: 1
+    }
+    
+      
+      
+    
+    
+      
+      
+    
+  </script>
+  <script>function l(){var t=d.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://links.test.alipay.net/init.js?_=1";var e=d.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}var w=window,d=document,i=function(){i.c(arguments)};i.q=[],i.c=function(t){i.q.push(t)},w.SupportNs=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1);</script>
+  </body>
+</html>
+
+

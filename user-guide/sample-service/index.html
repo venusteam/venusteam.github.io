@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="base-url" content="http://venusplus.cn/">
+    <link type="image/png" href="/images/head.png" rel="shortcut icon" />
+    <base href="http://venusplus.cn/">
+    <link rel="stylesheet" href="css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_18677_3gesaak2gctyb9.css">
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/vendor/antd.min.css" rel="stylesheet">
+    <link href="css/vendor/swiper.min.css" rel="stylesheet">
+    <title>Venus中间件-手把手教你发布服务</title>
+    <script src="js/vendor/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.min.js" type="text/javascript" charset="utf-8"></script>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+  </head>
+  <body data-url="/user-guide/sample-service/" class="theme">
+    
+<div class="header">
+  <div>
+    <div class="header-wrapper">
+      <div class="header-logo">
+        <a href=/>
+          <img src="/images/logo.png" alt="">
+        </a>
+      </div>
+      <ul class="sofa-menu ant-menu ant-menu-horizontal ant-menu-light ant-menu-root" role="menu">
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/">首页</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="product-menu">
+                <div class="product-menu-wrapper">
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">快速开发框架</div>
+                      
+                        <a href=/product/venus class="product-menu-title-link">Venus</a>
+                      
+                        <a href=/product/venusboot class="product-menu-title-link">Venus Boot</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">微服务框架</div>
+                      
+                        <a href=/product/venus-cloud class="product-menu-title-link">Venus Cloud</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">经典中间件</div>
+                      
+                        <a href=/product/talos class="product-menu-title-link">Talos网关</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">数据中间件</div>
+                      
+                        <a href=/product/venus-dts class="product-menu-title-link">Venus DTS</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">工具和公共类库</div>
+                      
+                        <a href=/product/venus-codegen class="product-menu-title-link">Venus CodeGen</a>
+                      
+                    </div>
+                  
+                </div>
+              </div>
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="javascript:;">产品</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">文档</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">控制台</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">关于我们</a>
+                
+                
+                
+              </div>
+          </li>
+        
+
+      </ul>
+      <div class="sofa-menu-right pull-right">
+       
+        <div class="search">
+          <span class="ant-input-group-wrapper" style="width: 262px;">
+            <span class="ant-input-wrapper ant-input-group">
+              
+              <span class="ant-input-search ant-input-affix-wrapper">
+                <form class="search-form" action=/search method="get">
+                    <input type="text" name="q" placeholder="请输入搜索内容" value="" class="ant-input" autocomplete="off" />
+                    <input type="hidden" name="title" value="新人上手">
+                </form>
+                <span class="ant-input-suffix">
+                  <i class="anticon anticon-search ant-input-search-icon"></i>
+                </span>
+              </span>
+            </span>
+          </span>
+        </div>
+
+       
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="main">
+      
+  
+  
+    <div class="pg-artical " id="pg-artical">
+      <div class="wrap">
+        
+<div class="nav-section">
+  <div class="navbar">
+    <span class="larkicon larkicon-toc"></span>
+  </div>
+  <nav class="nav-container">
+    <ul class="catalog">
+      
+        
+        <li class="current-book">
+          <span class="name">新人上手3</span>
+          <div class="liebiao-wrapper">
+            
+              <i id="title-liebiao-icon" class="title-liebiao-icon iconfont icon-liebiao"></i>
+            
+
+            <div class="docs-map">
+              <div class="docs-map-wrapper">
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">开发框架</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/#">Venus Framework</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">微服务框架</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/twa">Venus Cloud</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">中间件</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/talos">Talos网关</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">数据库中间件</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/venus-dts">DTS</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">工具类</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/venus-codegen">CodeGen</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">帮助中心</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/user-guide">新人上手</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+              </div>
+            </div>
+          </div>
+
+        </li>
+        
+          <li class="nav-item depth1   " data-currentPath="1" data-rootPath="1"><a href="user-guide/readme" class="">
+              简介
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="2" data-rootPath="2"><a href="user-guide/product-application-intro" class="">
+              产品与应用
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="3" data-rootPath="3"><a href="user-guide/sprint-intro" class="">
+              应用研发
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="4" data-rootPath="4"><a href="user-guide/service-intro" class="">
+              服务
+            </a></li>
+        
+      
+    </ul>
+  </nav>
+</div>
+
+        <div class="main-container">
+          <div id="page-toc"></div>
+          <div class="artical-section larksite">
+    <div class="doc-article">
+      <article class="doc-article-inner">
+        <div class="typo">
+          <h1 class="typo-title" itemprop="title">
+          手把手教你发布服务
+          </h1>
+          <p class="meta">更新时间: <span>2017-6-26</span></p>
+          <div class="typo-content">
+            <p><blockquote>
+<p>你大概需要一刻钟来阅读本文档，浏览所有外链不是必须的，你可以在需要做进一步了解的时候再浏览它们，通过本文档，就能在 Basement 上发布自己的服务给更多的小伙伴使用。</p>
+</blockquote>
+<h2 id="需求设定"><a class="anchor" href="#%E9%9C%80%E6%B1%82%E8%AE%BE%E5%AE%9A"><span class="octicon octicon-link"></span></a> 需求设定</h2>
+<p>假定我们现在要提供一个名为 <strong>Sample Service</strong> 的服务，该服务提供了两个接口，一个可以自由调用的接口 <code>GET /foo</code>，另一个需要授权才能使用的接口 <code>GET /bar</code>。</p>
+<h2 id="代码开发"><a class="anchor" href="#%E4%BB%A3%E7%A0%81%E5%BC%80%E5%8F%91"><span class="octicon octicon-link"></span></a> 代码开发</h2>
+<p>我们已经为你准备了一份完整的示例代码：<a href="http://gitlab.alipay-inc.com/basement/basement-service-example" target="_blank" rel="noopener"><a href="http://gitlab.alipay-inc.com/basement/basement-service-example">http://gitlab.alipay-inc.com/basement/basement-service-example</a></a> （非蚂蚁的同学请下载 <a href="https://private-alipayobjects.alipay.com/alipay-rmsdeploy-image/skylark/zip/2153/e251649b5f2edf09.zip" data-filetype="zip" target="_blank" rel="noopener">zip 包</a>） 。这是一份用 Chair 框架开发的 NodeJS 代码，但只要你有基本的 WEB 开发经验，都可以很容易的理解它。让我们一起快速浏览下最关键的 3 段代码（别忽略其中的注释哦）：</p>
+<h4 id="1-指定路由规则"><a class="anchor" href="#1-%E6%8C%87%E5%AE%9A%E8%B7%AF%E7%94%B1%E8%A7%84%E5%88%99"><span class="octicon octicon-link"></span></a> 1. 指定路由规则</h4>
+<p>文件：<a href="http://gitlab.alipay-inc.com/basement/basement-service-example/blob/master/app/router.js" target="_blank" rel="noopener">app/router.js</a></p>
+<pre><code>module.exports = function(app) {
+  // 这是一个无需授权的接口
+  app.get(&lsquo;/foo&rsquo;, app.controllers.sample.foo);
+  // 这是一个需要授权的接口
+  app.get(&lsquo;/bar&rsquo;, app.controllers.sample.bar);
+}
+</code></pre>
+<p><strong>推荐的 HTTP API 设计：</strong></p>
+<ol>
+<li>使用 <a href="http://www.ruanyifeng.com/blog/2014/05/restful_api.html" target="_blank" rel="noopener">RESTful API</a></li>
+<li>不对 API 分版本</li>
+<li>返回结果，包括异常均使用 JSON 格式</li>
+<li>异常时返回 &gt;=400 的状态码</li>
+</ol>
+<h4 id="2-指定对应的控制器"><a class="anchor" href="#2-%E6%8C%87%E5%AE%9A%E5%AF%B9%E5%BA%94%E7%9A%84%E6%8E%A7%E5%88%B6%E5%99%A8"><span class="octicon octicon-link"></span></a> 2. 指定对应的控制器</h4>
+<p>文件：<a href="http://gitlab.alipay-inc.com/basement/basement-service-example/blob/master/app/controllers/sample.js" target="_blank" rel="noopener">app/controllers/sample.js</a></p>
+<pre><code>exports.foo = function* () {
+  this.body = {
+    // 你可以通过 <code>x-base-id</code> 和 <code>x-base-name</code> 请求头分别获取
+    // 调用者的 Basement 服务账号 id 和 name，两者都是唯一的，
+    // 推荐优先使用 <code>x-base-name</code>
+    result: <code>${this.get('x-base-name')} just called the &amp;quot;/foo&amp;quot; api.</code>,
+  };
+};</p>
+
+<p>// 无需在你的代码中处理授权的问题，Basement 会帮你解决好
+exports.bar = function* () {
+  this.body = {
+    result: <code>${this.get('x-base-name')} just called the &amp;quot;/bar&amp;quot; api.</code>,
+  };
+}
+</code></pre>
+<h4 id="3-仅允许来自-basement-的请求"><a class="anchor" href="#3-%E4%BB%85%E5%85%81%E8%AE%B8%E6%9D%A5%E8%87%AA-basement-%E7%9A%84%E8%AF%B7%E6%B1%82"><span class="octicon octicon-link"></span></a> 3. 仅允许来自 Basement 的请求</h4>
+<p>文件：<a href="http://gitlab.alipay-inc.com/basement/basement-service-example/blob/master/app/middlewares/authenticate.js" target="_blank" rel="noopener">app/middlewares/authenticate.js</a></p>
+<pre><code>// 发布本服务的账号密码
+const id = {你的 Basement 服务账号 ID};
+const masterKey = {你的 Basement 服务账号 masterKey};</p>
+
+<p>module.exports = function() {
+  return function* (next) {
+    if (isFromBasement(this)) {
+      yield next;
+    } else {
+      this.body = {
+        message: &lsquo;拒绝处理不是由 Basement 转发的非法请求.&rsquo;,
+      };
+      this.status = 400;
+    }
+  }
+}</p>
+
+<p>function isFromBasement(ctx) {
+  // Basement 会帮你进行账号和授权管理，所以请确保只接受来自 Basement 的转发调用。
+  // 转发的请求头中加上服务发布者的账号信息，作为请求是经过 Basement 转发的凭证
+  // 请注意区分：x-base-server-id 是给转发到的服务端鉴权使用的，代表的是服务发布者的账号信息。x-base-id 是用户请求时带上的信息，代表用户的账号信息。
+  return ctx.get(&lsquo;x-base-server-id&rsquo;) === id &amp;&amp; ctx.get(&lsquo;x-base-server-masterkey&rsquo;) === masterKey;
+}
+</code></pre>
+<p>然后在配置文件 <a href="http://gitlab.alipay-inc.com/basement/basement-service-example/blob/master/config/config.default.js" target="_blank" rel="noopener">config/config.default.js</a> 中开启该中间件：</p>
+<pre><code>module.exports = () =&gt; {
+  exports.middlewares = [
+    &lsquo;authenticate&rsquo;,
+  ];
+  return exports;
+};
+</code></pre>
+<h2 id="线下部署"><a class="anchor" href="#%E7%BA%BF%E4%B8%8B%E9%83%A8%E7%BD%B2"><span class="octicon octicon-link"></span></a> 线下部署</h2>
+<p>现在我们假定你已经将自己的应用部署到某个线下环境（如 dev、test、stable，local 也没问题），并且可以通过 <code><a href="http://sample-service.stable.alipay.net">http://sample-service.stable.alipay.net</a></code> 来访问。</p>
+<h2 id="线下发布服务"><a class="anchor" href="#%E7%BA%BF%E4%B8%8B%E5%8F%91%E5%B8%83%E6%9C%8D%E5%8A%A1"><span class="octicon octicon-link"></span></a> 线下发布服务</h2>
+<p>访问 Basement 的 stable 环境：<a href="http://basement.stable.alipay.net/" target="_blank" rel="noopener"><a href="http://basement.stable.alipay.net/">http://basement.stable.alipay.net/</a></a> ，通过点击服务列表左上方的 <code>登记服务</code> 按钮，填写如下表单：</p>
+<p><img src="https://private-alipayobjects.alipay.com/alipay-rmsdeploy-image/skylark/png/2153/5a63d7cc8bf6dd5b.png" alt="57ea21fcc064a588.png" class="align-none" /></p>
+<h2 id="线下发布验证"><a class="anchor" href="#%E7%BA%BF%E4%B8%8B%E5%8F%91%E5%B8%83%E9%AA%8C%E8%AF%81"><span class="octicon octicon-link"></span></a> 线下发布验证</h2>
+<p>好了，现在可以愉快的使用你刚刚发布的服务了，<strong>记得换个账号调用，因为发布服务的账号默认能调用需要授权的接口</strong>：</p>
+<p><strong>调用 /foo 接口</strong></p>
+<pre><code>curl <br />
+-X GET <br />
+-H &quot;x-base-id: {yourAccountId}&quot; <br />
+-H &quot;x-base-masterkey: {yourMasterKey}&quot; <br />
+-H &quot;Content-Type: application/json&quot; <br />
+<a href="http://basement-api.stable.alipay.net/sample_service/foo">http://basement-api.stable.alipay.net/sample_service/foo</a>
+</code></pre>
+<p>返回：</p>
+<pre><code>{&quot;result&quot;:&quot;union_test just called the &amp;quot;/foo&amp;quot; api.&quot;}
+</code></pre>
+<p><strong>调用 /bar 接口</strong></p>
+<pre><code>curl <br />
+-X GET <br />
+-H &quot;x-base-id: {yourAccountId}&quot; <br />
+-H &quot;x-base-masterkey: {yourMasterKey}&quot; <br />
+-H &quot;Content-Type: application/json&quot; <br />
+<a href="http://basement-api.stable.alipay.net/sample_service/bar">http://basement-api.stable.alipay.net/sample_service/bar</a>
+</code></pre>
+<p>返回：</p>
+<pre><code>{&quot;code&quot;:9,&quot;name&quot;:&quot;Unauthorized Error&quot;,&quot;error&quot;:&quot;Unauthorized Error&quot;,&quot;addition&quot;:{&quot;service&quot;:&quot;sample_service&quot;}}
+</code></pre>
+<p><strong>申请授权</strong></p>
+<p><img src="https://private-alipayobjects.alipay.com/alipay-rmsdeploy-image/skylark/png/2153/08cdada6af970f8c.png" alt="Screen Shot 2017-05-24 at 1.33.33 PM.png" class="align-none" /></p>
+<p>点击服务卡片上的申请授权，勾选需要使用的接口，提交后，联系服务发布者进行审批即可（<strong>暂未接入消息通知</strong>）。</p>
+<p><img src="https://private-alipayobjects.alipay.com/alipay-rmsdeploy-image/skylark/png/2153/f28d878b5ca54325.png" alt="Screen Shot 2017-05-24 at 2.08.09 PM.png" class="align-none" /></p>
+<p>服务发布者就可以在上述服务管理面板中进行审批。 审批通过后，申请者就可以正常调用了。</p>
+<h2 id="正式发布应用"><a class="anchor" href="#%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E5%BA%94%E7%94%A8"><span class="octicon octicon-link"></span></a> 正式发布应用</h2>
+<p>你可以将上述代码发布成一个线上应用（推荐使用 HTTPS），也可以发布成一个线下应用（<strong>需要开通生产网能访问的跨域 VIP</strong>）。</p>
+<p>现在我们假定你已经发布成功，并且可以通过 <code><a href="https://sample-service.alipay.com">https://sample-service.alipay.com</a></code> 来访问。</p>
+<h2 id="正式发布服务"><a class="anchor" href="#%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E6%9C%8D%E5%8A%A1"><span class="octicon octicon-link"></span></a> 正式发布服务</h2>
+<p>访问 Basement 的生产环境：<a href="https://basement.alipay.com/" target="_blank" rel="noopener"><a href="https://basement.alipay.com/">https://basement.alipay.com/</a></a> ，操作步骤同 “线下发布服务” 步骤，不再赘述。</p>
+<h2 id="正式发布验证"><a class="anchor" href="#%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E9%AA%8C%E8%AF%81"><span class="octicon octicon-link"></span></a> 正式发布验证</h2>
+<p>操作步骤同 “线下发布验证” 步骤，区别是 1）换成线上的服务账号 2）endpoint 换成 <a href="https://basement-api.alipay.com" target="_blank" rel="noopener"><a href="https://basement-api.alipay.com">https://basement-api.alipay.com</a></a> 。</p>
+<p>至此，恭喜你已经成功发布了一个服务，赶紧邀请有需要的小伙伴来使用吧！</p></p>
+
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+    <div class="mask hidden"></div>
+    
+      <script src="https://gw.alipayobjects.com/as/g/lark/site-toc/2.0.9/toc.js"></script>
+<script>
+  $('#page-toc').generateToc({
+    contentContainer: $('.typo'),
+    hasFirstLevelHeader: false,
+    offsetTop: 0,
+    affix: {
+      bgColor: "transparent",
+    },
+  })
+</script>
+
+    
+  
+
+    </div>
+    <div class="ant-row footer" style="background-image: linear-gradient(180deg,#050b22 0,#050b22 50%,#032158);">
+  <div class="footer-content">
+    <div class="ant-row footer-desc">
+      <div class="ant-col-8 ant-col-offset-2 footer-team">
+        <h4>我们的团队</h4>
+        <p>中国，上海</p>
+      </div>
+      <div class="ant-col-4 ant-col-offset-2 footer-friend">
+        <h4>友情链接</h4>
+        <p>
+          <a href="http://xujin.org">许进沉思录</a>
+        </p>
+        <p>
+          <a href="https://springcloud.cn">Spring Cloud中国社区</a>
+        </p>
+
+      </div>
+      <div class="ant-col-6 ant-col-offset-2 footer-contact">
+        <h4>联系我们</h4>
+        <p>业务咨询：<a href="mailto: Software_King@qq.com">Software_King@qq.com</a></p>
+        <p>技术咨询：<a href="mailto: Software_King@qq.com">Software_King@qq.com</a></p>
+        
+      </div>
+    </div>
+    <div class="copyright">
+      Venus Plus版权所有 &copy; 2017-2020 Venus中间件团队体系  Powered by xujin.org
+    </div>
+  </div>
+</div>
+
+
+    
+    <div style="display: none">
+    <script src="https://s19.cnzz.com/z_stat.php?id=1268345961&web_id=1268345961" language="JavaScript"></script>
+    </div>
+    
+    <script>
+    window.SupportConfig = {
+      appId: "5a027aa32cfc95272917b0c6",
+      host: "https://links.test.alipay.net/",
+      bottom: "20px",
+      right: "50px",
+      opacity: 1
+    }
+    
+      
+      
+    
+    
+      
+      
+    
+  </script>
+  <script>function l(){var t=d.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://links.test.alipay.net/init.js?_=1";var e=d.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}var w=window,d=document,i=function(){i.c(arguments)};i.q=[],i.c=function(t){i.q.push(t)},w.SupportNs=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1);</script>
+  </body>
+</html>
+
+
