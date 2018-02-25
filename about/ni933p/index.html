@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="base-url" content="http://venusplus.cn/">
+    <link type="image/png" href="/images/head.png" rel="shortcut icon" />
+    <base href="http://venusplus.cn/">
+    <link rel="stylesheet" href="css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_18677_3gesaak2gctyb9.css">
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/vendor/antd.min.css" rel="stylesheet">
+    <link href="css/vendor/swiper.min.css" rel="stylesheet">
+    <title>Venus中间件-文件存储环境说明</title>
+    <script src="js/vendor/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.min.js" type="text/javascript" charset="utf-8"></script>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+  </head>
+  <body data-url="/about/ni933p/" class="theme">
+    
+<div class="header">
+  <div>
+    <div class="header-wrapper">
+      <div class="header-logo">
+        <a href=/>
+          <img src="/images/logo.png" alt="">
+        </a>
+      </div>
+      <ul class="sofa-menu ant-menu ant-menu-horizontal ant-menu-light ant-menu-root" role="menu">
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/">首页</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="product-menu">
+                <div class="product-menu-wrapper">
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">快速开发框架</div>
+                      
+                        <a href=/product/venus class="product-menu-title-link">Venus</a>
+                      
+                        <a href=/product/venusboot class="product-menu-title-link">Venus Boot</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">微服务框架</div>
+                      
+                        <a href=/product/venus-cloud class="product-menu-title-link">Venus Cloud</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">经典中间件</div>
+                      
+                        <a href=/product/talos class="product-menu-title-link">Talos网关</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">数据中间件</div>
+                      
+                        <a href=/product/venus-dts class="product-menu-title-link">Venus DTS</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">工具和公共类库</div>
+                      
+                        <a href=/product/venus-codegen class="product-menu-title-link">Venus CodeGen</a>
+                      
+                    </div>
+                  
+                </div>
+              </div>
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="javascript:;">产品</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">文档</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">控制台</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">关于我们</a>
+                
+                
+                
+              </div>
+          </li>
+        
+
+      </ul>
+      <div class="sofa-menu-right pull-right">
+       
+        <div class="search">
+          <span class="ant-input-group-wrapper" style="width: 262px;">
+            <span class="ant-input-wrapper ant-input-group">
+              
+              <span class="ant-input-search ant-input-affix-wrapper">
+                <form class="search-form" action=/search method="get">
+                    <input type="text" name="q" placeholder="请输入搜索内容" value="" class="ant-input" autocomplete="off" />
+                    <input type="hidden" name="title" value="File 文件上传">
+                </form>
+                <span class="ant-input-suffix">
+                  <i class="anticon anticon-search ant-input-search-icon"></i>
+                </span>
+              </span>
+            </span>
+          </span>
+        </div>
+
+       
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="main">
+      
+  
+  
+    <div class="pg-artical " id="pg-artical">
+      <div class="wrap">
+        
+<div class="nav-section">
+  <div class="navbar">
+    <span class="larkicon larkicon-toc"></span>
+  </div>
+  <nav class="nav-container">
+    <ul class="catalog">
+      
+        
+        <li class="current-book">
+          <span class="name">File 文件上传</span>
+          <div class="liebiao-wrapper">
+            
+              <i id="title-liebiao-icon" class="title-liebiao-icon iconfont icon-liebiao"></i>
+            
+
+            <div class="docs-map">
+              <div class="docs-map-wrapper">
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">开发框架</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/#">Venus Framework</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">微服务框架</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/twa">Venus Cloud</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">中间件</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/talos">Talos网关</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">数据库中间件</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/venus-dts">DTS</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">工具类</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/venus-codegen">CodeGen</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">帮助中心</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/user-guide">新人上手</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+              </div>
+            </div>
+          </div>
+
+        </li>
+        
+          <li class="nav-item depth1   " data-currentPath="1" data-rootPath="1"><a href="file/intro" class="">
+              简介
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="2" data-rootPath="2"><a href="file/start" class="">
+              快速上手
+            </a></li>
+        
+          <li class="nav-item depth1   has-children" data-currentPath="3" data-rootPath="3"><span class="larkicon iconfont icon-xialajiantou toggle"></span><span class="name">使用教程</span></li>
+        
+          <li class="nav-item depth2  hidden " data-currentPath="3.1" data-rootPath="3"><a href="file/env-intro" class="">
+              文件上传
+            </a></li>
+        
+          <li class="nav-item depth2  hidden " data-currentPath="3.2" data-rootPath="3"><span class="name">FAQ</span></li>
+        
+          <li class="nav-item depth3  hidden " data-currentPath="3.2.1" data-rootPath="3"><a href="file/image-resize" class="">
+              图片缩放
+            </a></li>
+        
+          <li class="nav-item depth3  hidden " data-currentPath="3.2.2" data-rootPath="3"><a href="file/env-targetenv" class="">
+              服务环境和文件部署环境
+            </a></li>
+        
+          <li class="nav-item depth3  hidden " data-currentPath="3.2.3" data-rootPath="3"><a href="file/bucket-relation" class="">
+              Bucket 对应关系
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="4" data-rootPath="4"><a href="file/http-api" class="">
+              HTTP API
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="5" data-rootPath="5"><a href="file/cli" class="">
+              CLI
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="6" data-rootPath="6"><a href="file/java-sdk" class="">
+              JAVA SDK
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="7" data-rootPath="7"><a href="jssdk/file" class="">
+              Node.js SDK
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="8" data-rootPath="8"><a href="file/egg-plugin" class="">
+              Egg/Chair 插件
+            </a></li>
+        
+      
+    </ul>
+  </nav>
+</div>
+
+        <div class="main-container">
+          <div id="page-toc"></div>
+          <div class="artical-section larksite">
+    <div class="doc-article">
+      <article class="doc-article-inner">
+        <div class="typo">
+          <h1 class="typo-title" itemprop="title">
+          文件存储环境说明
+          </h1>
+          <p class="meta">更新时间: <span>2017-8-2</span></p>
+          <div class="typo-content">
+            <p><p>Basement File 底层存储完全基于 OSS ,通过不同的网络和 endpoint 划分出了如下几个环境:</p>
+<ul>
+<li><strong>PUBLIC(公网环境)</strong>:
+<blockquote>
+<p>通过 CDN 进行访问，QPS 可达百万级，适合需要把文件放到公网的所有用户。</p>
+</blockquote>
+</li>
+<li><strong>INTERNAL(公司内网环境)</strong>:
+<blockquote>
+<p>直接访问 OSS ,文件只能在内网中访问，其他环境无法访问到。</p>
+</blockquote>
+</li>
+<li><strong>PRIVATE(私有文件)</strong>:
+<blockquote>
+<p>使用这种方式存储的文件不能直接访问，必须通过 SDK 提供的授权接口获取有时效性的授权链接后才可以访问。</p>
+</blockquote>
+</li>
+<li><strong>STRICT(防盗链环境)</strong>:
+<blockquote>
+<p>使用这种方式上传的文件可以在 CDN 上配置防盗链的规则，一般不太使用。</p>
+</blockquote>
+</li>
+<li><strong>NET(沙箱环境)</strong>
+<blockquote>
+<p>沙箱环境，主要服务于公司的沙箱环境中的系统，不能直接用于生产业务。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="服务-endpoint-配置说明"><a class="anchor" href="#%E6%9C%8D%E5%8A%A1-endpoint-%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E"><span class="octicon octicon-link"></span></a> 服务 endpoint 配置说明</h3>
+<ul>
+<li>Basement File 是服务型应用，不区分 stable 环境和生产环境，所以服务统一使用 Basement 线上环境 endpoint，然后通过 targetEnv 参数区分线上或线下环境。</li>
+</ul></p>
+
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+    <div class="mask hidden"></div>
+    
+      <script src="https://gw.alipayobjects.com/as/g/lark/site-toc/2.0.9/toc.js"></script>
+<script>
+  $('#page-toc').generateToc({
+    contentContainer: $('.typo'),
+    hasFirstLevelHeader: false,
+    offsetTop: 0,
+    affix: {
+      bgColor: "transparent",
+    },
+  })
+</script>
+
+    
+  
+
+    </div>
+    <div class="ant-row footer" style="background-image: linear-gradient(180deg,#050b22 0,#050b22 50%,#032158);">
+  <div class="footer-content">
+    <div class="ant-row footer-desc">
+      <div class="ant-col-8 ant-col-offset-2 footer-team">
+        <h4>我们的团队</h4>
+        <p>中国，上海</p>
+      </div>
+      <div class="ant-col-4 ant-col-offset-2 footer-friend">
+        <h4>友情链接</h4>
+        <p>
+          <a href="http://xujin.org">许进沉思录</a>
+        </p>
+        <p>
+          <a href="https://springcloud.cn">Spring Cloud中国社区</a>
+        </p>
+
+      </div>
+      <div class="ant-col-6 ant-col-offset-2 footer-contact">
+        <h4>联系我们</h4>
+        <p>业务咨询：<a href="mailto: Software_King@qq.com">Software_King@qq.com</a></p>
+        <p>技术咨询：<a href="mailto: Software_King@qq.com">Software_King@qq.com</a></p>
+        
+      </div>
+    </div>
+    <div class="copyright">
+      Venus Plus版权所有 &copy; 2017-2020 Venus中间件团队体系  Powered by xujin.org
+    </div>
+  </div>
+</div>
+
+
+    
+    <div style="display: none">
+    <script src="https://s19.cnzz.com/z_stat.php?id=1268345961&web_id=1268345961" language="JavaScript"></script>
+    </div>
+    
+  </body>
+</html>
+
+

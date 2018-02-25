@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="base-url" content="http://venusplus.cn/">
+    <link type="image/png" href="/images/head.png" rel="shortcut icon" />
+    <base href="http://venusplus.cn/">
+    <link rel="stylesheet" href="css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_18677_3gesaak2gctyb9.css">
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/vendor/antd.min.css" rel="stylesheet">
+    <link href="css/vendor/swiper.min.css" rel="stylesheet">
+    <title>Venus中间件-4.2.8.render 架构设计</title>
+    <script src="js/vendor/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.min.js" type="text/javascript" charset="utf-8"></script>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+  </head>
+  <body data-url="/user-guide/render-architecture/" class="theme">
+    
+<div class="header">
+  <div>
+    <div class="header-wrapper">
+      <div class="header-logo">
+        <a href=/>
+          <img src="/images/logo.png" alt="">
+        </a>
+      </div>
+      <ul class="sofa-menu ant-menu ant-menu-horizontal ant-menu-light ant-menu-root" role="menu">
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/">首页</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="product-menu">
+                <div class="product-menu-wrapper">
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">快速开发框架</div>
+                      
+                        <a href=/product/venus class="product-menu-title-link">Venus</a>
+                      
+                        <a href=/product/venusboot class="product-menu-title-link">Venus Boot</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">微服务框架</div>
+                      
+                        <a href=/product/venus-cloud class="product-menu-title-link">Venus Cloud</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">经典中间件</div>
+                      
+                        <a href=/product/talos class="product-menu-title-link">Talos网关</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">数据中间件</div>
+                      
+                        <a href=/product/venus-dts class="product-menu-title-link">Venus DTS</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">工具和公共类库</div>
+                      
+                        <a href=/product/venus-codegen class="product-menu-title-link">Venus CodeGen</a>
+                      
+                    </div>
+                  
+                </div>
+              </div>
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="javascript:;">产品</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">文档</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">控制台</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">关于我们</a>
+                
+                
+                
+              </div>
+          </li>
+        
+
+      </ul>
+      <div class="sofa-menu-right pull-right">
+       
+        <div class="search">
+          <span class="ant-input-group-wrapper" style="width: 262px;">
+            <span class="ant-input-wrapper ant-input-group">
+              
+              <span class="ant-input-search ant-input-affix-wrapper">
+                <form class="search-form" action=/search method="get">
+                    <input type="text" name="q" placeholder="请输入搜索内容" value="" class="ant-input" autocomplete="off" />
+                    <input type="hidden" name="title" value="新人上手">
+                </form>
+                <span class="ant-input-suffix">
+                  <i class="anticon anticon-search ant-input-search-icon"></i>
+                </span>
+              </span>
+            </span>
+          </span>
+        </div>
+
+       
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="main">
+      
+  
+  
+    <div class="pg-artical " id="pg-artical">
+      <div class="wrap">
+        
+<div class="nav-section">
+  <div class="navbar">
+    <span class="larkicon larkicon-toc"></span>
+  </div>
+  <nav class="nav-container">
+    <ul class="catalog">
+      
+        
+        <li class="current-book">
+          <span class="name">新人上手3</span>
+          <div class="liebiao-wrapper">
+            
+              <i id="title-liebiao-icon" class="title-liebiao-icon iconfont icon-liebiao"></i>
+            
+
+            <div class="docs-map">
+              <div class="docs-map-wrapper">
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">开发框架</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/#">Venus Framework</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">微服务框架</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/twa">Venus Cloud</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">中间件</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/talos">Talos网关</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">数据库中间件</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/venus-dts">DTS</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">工具类</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/venus-codegen">CodeGen</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">帮助中心</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/user-guide">新人上手</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+              </div>
+            </div>
+          </div>
+
+        </li>
+        
+          <li class="nav-item depth1   " data-currentPath="1" data-rootPath="1"><a href="user-guide/readme" class="">
+              简介
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="2" data-rootPath="2"><a href="user-guide/product-application-intro" class="">
+              产品与应用
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="3" data-rootPath="3"><a href="user-guide/sprint-intro" class="">
+              应用研发
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="4" data-rootPath="4"><a href="user-guide/service-intro" class="">
+              服务
+            </a></li>
+        
+      
+    </ul>
+  </nav>
+</div>
+
+        <div class="main-container">
+          <div id="page-toc"></div>
+          <div class="artical-section larksite">
+    <div class="doc-article">
+      <article class="doc-article-inner">
+        <div class="typo">
+          <h1 class="typo-title" itemprop="title">
+          4.2.8.render 架构设计
+          </h1>
+          <p class="meta">更新时间: <span>2017-5-25</span></p>
+          <div class="typo-content">
+            <p><h2 id="基于-cdn-缓存的页面渲染服务"><a class="anchor" href="#%E5%9F%BA%E4%BA%8E-cdn-%E7%BC%93%E5%AD%98%E7%9A%84%E9%A1%B5%E9%9D%A2%E6%B8%B2%E6%9F%93%E6%9C%8D%E5%8A%A1"><span class="octicon octicon-link"></span></a> 基于 CDN 缓存的页面渲染服务</h2>
+<p><img src="http://alipay-rmsdeploy-dev-assets.oss-cn-hangzhou-zmf.aliyuncs.com/tfs-upload/dead-horsedeMacBook-Pro.local/1464712939742-e0dChllNG3hxATPD-pngpaste_1464712939006.png" alt class="align-none" /></p>
+<p>用户直接访问的域名（render.(alipay|koubei|alipay-eco).com 等）指向 CDN，各个业务线的页面用不同的域名做隔离。CDN 页面不存在时才会回源站渲染，并缓存在 CDN 上。每次的渲染结果只缓存在 CDN（客户端无缓存），并只设置一个很短的过期时间（1~2分钟），保证页面数据更新的实时性。CDN 自身有完善的热点迁移和智能调度功能，保证服务的高可用。</p>
+<p>渲染源站上的 render 服务仅包含模板渲染逻辑，渲染需要的所有模板和数据都存放在 oss 上，oss 自身提供主备容灾，render 同时会对模板、数据以及渲染结果做多重备份，保证渲染源站高可用。</p>
+<p>凤蝶搭建和凤蝶数据是离线产出系统，负责将模板以及对应的数据推送到 oss，不会对线上渲染服务的可用性造成影响。线上渲染服务仅仅弱依赖于 oss。</p>
+<h3 id="cdn-回源链路"><a class="anchor" href="#cdn-%E5%9B%9E%E6%BA%90%E9%93%BE%E8%B7%AF"><span class="octicon octicon-link"></span></a> CDN 回源链路</h3>
+<p><img src="http://alipay-rmsdeploy-dev-assets.oss-cn-hangzhou-zmf.aliyuncs.com/tfs-upload/dead-horsedeMacBook-Pro.local/1464713415660-qhjg8lHETHBq2CXl-pngpaste_1464713415227.png" alt class="align-none" /></p>
+<ul>
+<li>用户直接访问的 CDN 集群有上百个节点，提供高性能、高可用的缓存服务，支撑海量用户请求。</li>
+<li>CDN 上数据不存在时会进行回源（多个请求会进行回源合并），请求并不会直接回源到 render 服务源站，而是经由二级缓存进行一次回源收敛，降低源站压力。</li>
+<li>render 渲染源站部署在 Rzone，且完全无状态，每一个 zone 都能独立进行服务，确保源站高可用。</li>
+</ul>
+<h2 id="render-流程图"><a class="anchor" href="#render-%E6%B5%81%E7%A8%8B%E5%9B%BE"><span class="octicon octicon-link"></span></a> render 流程图</h2>
+<p><img src="https://zos.alipayobjects.com/rmsportal/bLfzvfwBoNULzukbakyphFgDMHvpaZYH.png" alt="render 的流程图" class="align-none" /></p>
+<h2 id="render-性能"><a class="anchor" href="#render-%E6%80%A7%E8%83%BD"><span class="octicon octicon-link"></span></a> render 性能</h2>
+<p><a href="http://loadmanager-1-2.lab6.alipay.net/report.htm?recordId=43523&amp;recordIds=43523&amp;index=tps%BB%E3%D7%DC&amp;tid=43523" target="_blank" rel="noopener">render 源站单机压测报告</a></p>
+<p>由于所有的请求都由 CDN 先进行缓存，最终落到应用机器上的请求数量大幅度降低，以前是每个用户请求都需要服务器进行一次渲染，现在每一个页面在一个缓存失效周期内只需要渲染 CDN L2 节点数量的次数。</p>
+<p><code>render 的总 QPS = CDN L2 节点数量 * 在线活动页面 / 缓存失效时间</code></p>
+<p>如果 L2 有 100 个节点，缓存失效时间为 60 秒，在线活动页面为 2000 个，那么</p>
+<p><code>render 的总 QPS = 100 * 2000 / 60 = 3300</code></p>
+<p>由于 CDN 回源时会做收敛和合并，就算同一时间缓存全部失效，也不会造成大量的回源请求。在极端情况下同一时间所有页面全部回源，会造成源站短时间的拥堵，响应时间较长，但是由于 CDN 拿到数据后再 1 分钟内不会再请求源站，不会造成雪崩效应，后续的回源也会慢慢趋于均匀。</p>
+<h2 id="资源节省"><a class="anchor" href="#%E8%B5%84%E6%BA%90%E8%8A%82%E7%9C%81"><span class="octicon octicon-link"></span></a> 资源节省</h2>
+<ul>
+<li>服务器：集群只需要 48 台机器，即可支持大促（这还是由于 rzone 部署最少必须 48 台）。</li>
+<li>流量：通过让 CDN 将现在昂贵的 bgp 流量换成便宜的 CDN 流量。</li>
+</ul>
+<h3 id="不使用-render-和使用-render-的费用比较"><a class="anchor" href="#%E4%B8%8D%E4%BD%BF%E7%94%A8-render-%E5%92%8C%E4%BD%BF%E7%94%A8-render-%E7%9A%84%E8%B4%B9%E7%94%A8%E6%AF%94%E8%BE%83"><span class="octicon octicon-link"></span></a> 不使用 render 和使用 render 的费用比较</h3>
+<p>假定一个 pv 2.7 亿的应用，平均页面大小为 30k，那么日均流量为 8000G</p>
+<p>不使用 render 的年费用</p>
+<p><code>400（机器数） * 10000（4核 8G，20G 流量配置机器一年的价格）= 4,000,000</code></p>
+<p>使用 render 的年费用</p>
+<p><code>40（机器数） * 5000（4核 8G，3G 流量配置机器一年的价格）+ 8000 * 0.32（G/每天） * 365 (每天CDN 流量) = 1,134,400</code></p>
+<p>在不考虑 bgp 流量更加昂贵的情况下，日常的资源消耗只需要原来的  1/4。而在大促的时候，ant render 方案只需要增加少量的 CDN 流量成本即可，而原有方案需要临时新增超过 500 台机器来抗压力。</p></p>
+
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+    <div class="mask hidden"></div>
+    
+      <script src="https://gw.alipayobjects.com/as/g/lark/site-toc/2.0.9/toc.js"></script>
+<script>
+  $('#page-toc').generateToc({
+    contentContainer: $('.typo'),
+    hasFirstLevelHeader: false,
+    offsetTop: 0,
+    affix: {
+      bgColor: "transparent",
+    },
+  })
+</script>
+
+    
+  
+
+    </div>
+    <div class="ant-row footer" style="background-image: linear-gradient(180deg,#050b22 0,#050b22 50%,#032158);">
+  <div class="footer-content">
+    <div class="ant-row footer-desc">
+      <div class="ant-col-8 ant-col-offset-2 footer-team">
+        <h4>我们的团队</h4>
+        <p>中国，上海</p>
+      </div>
+      <div class="ant-col-4 ant-col-offset-2 footer-friend">
+        <h4>友情链接</h4>
+        <p>
+          <a href="http://xujin.org">许进沉思录</a>
+        </p>
+        <p>
+          <a href="https://springcloud.cn">Spring Cloud中国社区</a>
+        </p>
+
+      </div>
+      <div class="ant-col-6 ant-col-offset-2 footer-contact">
+        <h4>联系我们</h4>
+        <p>业务咨询：<a href="mailto: Software_King@qq.com">Software_King@qq.com</a></p>
+        <p>技术咨询：<a href="mailto: Software_King@qq.com">Software_King@qq.com</a></p>
+        
+      </div>
+    </div>
+    <div class="copyright">
+      Venus Plus版权所有 &copy; 2017-2020 Venus中间件团队体系  Powered by xujin.org
+    </div>
+  </div>
+</div>
+
+
+    
+    <div style="display: none">
+    <script src="https://s19.cnzz.com/z_stat.php?id=1268345961&web_id=1268345961" language="JavaScript"></script>
+    </div>
+    
+  </body>
+</html>
+
+

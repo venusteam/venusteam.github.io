@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="base-url" content="http://venusplus.cn/">
+    <link type="image/png" href="/images/head.png" rel="shortcut icon" />
+    <base href="http://venusplus.cn/">
+    <link rel="stylesheet" href="css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_18677_3gesaak2gctyb9.css">
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/vendor/antd.min.css" rel="stylesheet">
+    <link href="css/vendor/swiper.min.css" rel="stylesheet">
+    <title>Venus中间件-Search 搜索</title>
+    <script src="js/vendor/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.min.js" type="text/javascript" charset="utf-8"></script>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+  </head>
+  <body data-url="/user-guide/search/" class="theme">
+    
+<div class="header">
+  <div>
+    <div class="header-wrapper">
+      <div class="header-logo">
+        <a href=/>
+          <img src="/images/logo.png" alt="">
+        </a>
+      </div>
+      <ul class="sofa-menu ant-menu ant-menu-horizontal ant-menu-light ant-menu-root" role="menu">
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/">首页</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="product-menu">
+                <div class="product-menu-wrapper">
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">快速开发框架</div>
+                      
+                        <a href=/product/venus class="product-menu-title-link">Venus</a>
+                      
+                        <a href=/product/venusboot class="product-menu-title-link">Venus Boot</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">微服务框架</div>
+                      
+                        <a href=/product/venus-cloud class="product-menu-title-link">Venus Cloud</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">经典中间件</div>
+                      
+                        <a href=/product/talos class="product-menu-title-link">Talos网关</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">数据中间件</div>
+                      
+                        <a href=/product/venus-dts class="product-menu-title-link">Venus DTS</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">工具和公共类库</div>
+                      
+                        <a href=/product/venus-codegen class="product-menu-title-link">Venus CodeGen</a>
+                      
+                    </div>
+                  
+                </div>
+              </div>
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="javascript:;">产品</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">文档</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">控制台</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">关于我们</a>
+                
+                
+                
+              </div>
+          </li>
+        
+
+      </ul>
+      <div class="sofa-menu-right pull-right">
+       
+        <div class="search">
+          <span class="ant-input-group-wrapper" style="width: 262px;">
+            <span class="ant-input-wrapper ant-input-group">
+              
+              <span class="ant-input-search ant-input-affix-wrapper">
+                <form class="search-form" action=/search method="get">
+                    <input type="text" name="q" placeholder="请输入搜索内容" value="" class="ant-input" autocomplete="off" />
+                    <input type="hidden" name="title" value="新人上手">
+                </form>
+                <span class="ant-input-suffix">
+                  <i class="anticon anticon-search ant-input-search-icon"></i>
+                </span>
+              </span>
+            </span>
+          </span>
+        </div>
+
+       
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="main">
+      
+  
+  
+    <div class="pg-artical " id="pg-artical">
+      <div class="wrap">
+        
+<div class="nav-section">
+  <div class="navbar">
+    <span class="larkicon larkicon-toc"></span>
+  </div>
+  <nav class="nav-container">
+    <ul class="catalog">
+      
+        
+        <li class="current-book">
+          <span class="name">新人上手3</span>
+          <div class="liebiao-wrapper">
+            
+              <i id="title-liebiao-icon" class="title-liebiao-icon iconfont icon-liebiao"></i>
+            
+
+            <div class="docs-map">
+              <div class="docs-map-wrapper">
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">开发框架</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/#">Venus Framework</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">微服务框架</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/twa">Venus Cloud</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">中间件</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/talos">Talos网关</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">数据库中间件</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/venus-dts">DTS</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">工具类</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/venus-codegen">CodeGen</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">帮助中心</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/user-guide">新人上手</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+              </div>
+            </div>
+          </div>
+
+        </li>
+        
+          <li class="nav-item depth1   " data-currentPath="1" data-rootPath="1"><a href="user-guide/readme" class="">
+              简介
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="2" data-rootPath="2"><a href="user-guide/product-application-intro" class="">
+              产品与应用
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="3" data-rootPath="3"><a href="user-guide/sprint-intro" class="">
+              应用研发
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="4" data-rootPath="4"><a href="user-guide/service-intro" class="">
+              服务
+            </a></li>
+        
+      
+    </ul>
+  </nav>
+</div>
+
+        <div class="main-container">
+          <div id="page-toc"></div>
+          <div class="artical-section larksite">
+    <div class="doc-article">
+      <article class="doc-article-inner">
+        <div class="typo">
+          <h1 class="typo-title" itemprop="title">
+          Search 搜索
+          </h1>
+          <p class="meta">更新时间: <span>2017-2-17</span></p>
+          <div class="typo-content">
+            <p>如果你还没有设置你的项目，请先阅读 <a href="user-guide/client-and-config">客户端选择与配置</a>。</p>
+<h2 id="简介"><a class="anchor" href="#%E7%AE%80%E4%BB%8B"><span class="octicon octicon-link"></span></a> 简介</h2>
+<p>basement.search 基于阿里云 <a href="https://www.aliyun.com/product/opensearch" target="_blank" rel="noopener">OpenSearch</a> 为你的网站或应用程序提供简单、低成本，且稳定高效的搜索解决方案。</p>
+<p>basement.search 爬虫会定时爬取内网中各技术站点和文档页面。你可以通过配置需要在搜索结果中展示的站点 URL，来实现定制化的搜索。</p>
+<p>本文档可能没有完全覆盖所有的 API，请对照 <a href>basement.search 的 API 文档</a> 进行阅读。</p>
+<h2 id="注意事项"><a class="anchor" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="octicon octicon-link"></span></a> 注意事项</h2>
+<ul>
+<li>basement.search 相关的所有方法都是一个 <code>generatorFunction</code>。</li>
+<li>所有接口在失败或出现错误时，都会抛出异常。所有的异常都有 <code>code</code> 字段，可以用 <code>code</code> 到 <a href="user-guide/errors-code">错误码详解</a> 中查询到详细的错误原因和解决方案。</li>
+</ul>
+<h2 id="管理-url"><a class="anchor" href="#%E7%AE%A1%E7%90%86-url"><span class="octicon octicon-link"></span></a> 管理 URL</h2>
+<p>如果需要定制化搜索，可以通过配置搜索结果中需要展示站点的 URL 来实现。</p>
+<p>例如，在配置中添加了 <code>http://your_domain</code> 之后，该站点下匹配的内容将被允许在搜索结果中展示。</p>
+<h3 id="创建-url"><a class="anchor" href="#%E5%88%9B%E5%BB%BA-url"><span class="octicon octicon-link"></span></a> 创建 URL</h3>
+<p>当我们要在搜索结果中展示站点 <code>http://node.alibaba-inc.com</code> 下的内容，可以通过以下操作：</p>
+<pre><code class="lang-js hljs raw"><span class="hljs-keyword">const</span> search = <span class="hljs-keyword">new</span> Basement(config).search;
+<span class="hljs-keyword">const</span> res = <span class="hljs-keyword">yield</span> search.addUrl(<span class="hljs-string">'http://node.alibaba-inc.com'</span>);
+</code></pre>
+<h4 id="返回"><a class="anchor" href="#%E8%BF%94%E5%9B%9E"><span class="octicon octicon-link"></span></a> 返回</h4>
+<p>如果创建成功，将会返回一个对象，包含 <code>_id</code> 、 <code>createdAt</code> 、 <code>url</code> 等字段。</p>
+<p>其中，<code>_id</code> 是这个 URL 创建的唯一 id，后续对这个 URL 的任何修改都基于此 id。</p>
+<pre><code class="lang-js hljs raw">{
+  <span class="hljs-attr">_id</span>: <span class="hljs-string">'57231b0ca13eab6245a76dd2'</span>,
+  <span class="hljs-attr">url</span>: <span class="hljs-string">'http://node.alibaba-inc.com'</span>,
+  <span class="hljs-attr">createdAt</span>: <span class="hljs-string">'2016-05-07T14:11:49.065Z'</span>,
+}
+</code></pre>
+<h3 id="查看-url"><a class="anchor" href="#%E6%9F%A5%E7%9C%8B-url"><span class="octicon octicon-link"></span></a> 查看 URL</h3>
+<p>查看当前应用所有需要展示的 URL：</p>
+<pre><code class="lang-js hljs raw"><span class="hljs-keyword">const</span> search = <span class="hljs-keyword">new</span> Basement(config).search;
+<span class="hljs-keyword">const</span> res = <span class="hljs-keyword">yield</span> search.listUrl();
+</code></pre>
+<h4 id="返回-1"><a class="anchor" href="#%E8%BF%94%E5%9B%9E-1"><span class="octicon octicon-link"></span></a> 返回</h4>
+<p>如果查看成功，将会返回一个对象数组。其中包括当前应用所有需要展示的 URL。</p>
+<pre><code class="lang-js hljs raw">[{
+  <span class="hljs-attr">_id</span>: <span class="hljs-string">'5770f3bd9d9b564145ce35a2'</span>,
+  <span class="hljs-attr">url</span>: <span class="hljs-string">'http://gitlab.alipay-inc.com'</span>,
+  <span class="hljs-attr">createdAt</span>: <span class="hljs-string">'2016-06-27T09:37:01.030Z'</span>,
+}, {
+  <span class="hljs-attr">_id</span>: <span class="hljs-string">'5770f3bd9d9b564145ce35a3'</span>,
+  <span class="hljs-attr">url</span>: <span class="hljs-string">'http://web.npm.alibaba-inc.com'</span>,
+  <span class="hljs-attr">createdAt</span>: <span class="hljs-string">'2016-06-27T09:37:01.047Z'</span>,
+}]
+</code></pre>
+<p>如果该应用下没有配置任何 URL ，会返回一个空数组。<br />
+查询失败将抛出一个异常。</p>
+<h3 id="删除-url"><a class="anchor" href="#%E5%88%A0%E9%99%A4-url"><span class="octicon octicon-link"></span></a> 删除 URL</h3>
+<p>如前面所述，可以通过 <code>_id</code> 来删除一个对象。</p>
+<pre><code class="lang-js hljs raw"><span class="hljs-keyword">const</span> search = <span class="hljs-keyword">new</span> Basement(config).search;
+<span class="hljs-keyword">const</span> res = <span class="hljs-keyword">yield</span> search.removeUrl(<span class="hljs-string">'5770f3bd9d9b564145ce35a2'</span>);
+</code></pre>
+<h4 id="返回-2"><a class="anchor" href="#%E8%BF%94%E5%9B%9E-2"><span class="octicon octicon-link"></span></a> 返回</h4>
+<p>如果删除成功，会返回一个对象，包含一个字段 <code>deletedAt</code>。</p>
+<pre><code class="lang-js hljs raw">{
+  <span class="hljs-attr">deletedAt</span>: <span class="hljs-string">'2016-05-07T14:11:49.065Z'</span>,
+}
+</code></pre>
+<p>如果删除的对象不存在，返回 <code>null</code>。<br />
+删除失败会抛出一个异常。</p>
+<h2 id="搜索相关"><a class="anchor" href="#%E6%90%9C%E7%B4%A2%E7%9B%B8%E5%85%B3"><span class="octicon octicon-link"></span></a> 搜索相关</h2>
+<h3 id="搜索"><a class="anchor" href="#%E6%90%9C%E7%B4%A2"><span class="octicon octicon-link"></span></a> 搜索</h3>
+<p>通过调用 <code>search.query</code> 方法发起一次搜索请求：</p>
+<pre><code class="lang-js hljs raw">  <span class="hljs-keyword">const</span> search = <span class="hljs-keyword">new</span> Basement(config).search;
+
+  <span class="hljs-keyword">const</span> res = <span class="hljs-keyword">yield</span> search.query(<span class="hljs-string">'Hello world!'</span>, {
+    <span class="hljs-attr">skip</span>: <span class="hljs-number">100</span>,
+    <span class="hljs-attr">limit</span>: <span class="hljs-number">20</span>,
+  });
+</code></pre>
+<p>第一个参数是需要搜索的查询词。<br />
+第二个参数是搜索配置项，该参数是一个对象，包含以下可配置的选项：</p>
+<ul>
+<li><code>skip</code>: 跳过的条目数，默认为 0 ，取值范围 [0, 5000] 。</li>
+<li><code>limit</code>: 本次搜索返回条目的限制数量，默认为 10 ，取值范围 [1, 500] 。</li>
+</ul>
+<p>并且 <code>skip</code> + <code>limit</code> 不能超过 5000 。</p>
+<h4 id="返回-3"><a class="anchor" href="#%E8%BF%94%E5%9B%9E-3"><span class="octicon octicon-link"></span></a> 返回</h4>
+<p>如果搜索成功，会返回一个对象。</p>
+<pre><code class="lang-js hljs raw">{ <span class="hljs-attr">total</span>: <span class="hljs-number">41</span>,
+  <span class="hljs-attr">num</span>: <span class="hljs-number">2</span>,
+  <span class="hljs-attr">items</span>: [{
+    <span class="hljs-attr">url</span>: <span class="hljs-string">'http://m.alipay.net/specification/mock.html'</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'移动前端指引平台 —— Use your illusion'</span>,
+    <span class="hljs-attr">content</span>: <span class="hljs-string">'tnpm run &lt;em&gt;mock&lt;/em&gt;在boilerplate脚手架提供的命令中，tnpm run &lt;em&gt;mock&lt;/em&gt;是专门为&lt;em&gt;mock&lt;/em&gt;数据定制的命令。在你执行了tnpm run &lt;em&gt;mock&lt;/em&gt;创建server之后，所有的网关rpc请求均不会真正发出，会转而请求到本地&lt;em&gt;mock&lt;/em&gt;数据的mockData的对应...'</span>,
+  }, {
+    <span class="hljs-attr">url</span>: <span class="hljs-string">'http://m.alipay.net/specification/boilerplate.html'</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'移动前端指引平台 —— Use your illusion'</span>,
+    <span class="hljs-attr">content</span>: <span class="hljs-string">'verbose run with more logging messages.&lt;em&gt;MOCK&lt;/em&gt;数据提倡对接口进行&lt;em&gt;mock&lt;/em&gt;处理，便于进行开发、单元测试以及后续的埋点和监控在棱镜系统的展示 当你使用tnpm run &lt;em&gt;mock&lt;/em&gt;启动服务的时候，通过本实践提供的util.getRPC方法...'</span>,
+  }],
+}
+</code></pre>
+<p>其中，各项属性含义如下：</p>
+<ul>
+<li><code>total</code>: 符合搜索条件的结果总数</li>
+<li><code>num</code>: 本次搜索请求实际返回的条目数</li>
+<li><code>items</code>: 搜索结果条目对象的数组，其中，每一项结果条目包括：
+<ul>
+<li><code>url</code>: 该页面的 URL 地址</li>
+<li><code>title</code>: 页面的标题</li>
+<li><code>content</code>: 页面内容摘要，其中被 <code>&lt;em&gt;</code> 标签包裹起来的是匹配的关键字。</li>
+</ul>
+</li>
+</ul>
+<h3 id="搜索提示"><a class="anchor" href="#%E6%90%9C%E7%B4%A2%E6%8F%90%E7%A4%BA"><span class="octicon octicon-link"></span></a> 搜索提示</h3>
+<p>搜索提示是搜索服务中常见的功能，即在用户输入查询词的过程中，智能推荐候选查询词，减少用户输入，帮助用户尽快找到想要的内容。</p>
+<pre><code class="lang-js hljs raw">  <span class="hljs-keyword">const</span> search = <span class="hljs-keyword">new</span> Basement(config).search;
+
+  <span class="hljs-keyword">const</span> res = <span class="hljs-keyword">yield</span> search.suggest(<span class="hljs-string">'mock'</span>, {
+    <span class="hljs-attr">limit</span>: <span class="hljs-number">10</span>,
+  });
+</code></pre>
+<p>第一个参数是需要做提示推荐的查询词。<br />
+第二个参数是搜索配置项，该参数是一个对象，包含以下可配置的选项：</p>
+<ul>
+<li><code>limit</code>: 返回条目的限制数量，默认为 10 ，取值范围 [1, 10] 。</li>
+</ul>
+<h4 id="返回-4"><a class="anchor" href="#%E8%BF%94%E5%9B%9E-4"><span class="octicon octicon-link"></span></a> 返回</h4>
+<p>如果请求成功，会返回搜索提示结果列表。</p>
+<pre><code class="lang-js hljs raw">{
+  <span class="hljs-attr">suggestions</span>: [
+    { <span class="hljs-attr">suggestion</span>: <span class="hljs-string">'mock工具和restful设计细节探讨'</span> },
+    { <span class="hljs-attr">suggestion</span>: <span class="hljs-string">'mock伴侣'</span> },
+    { <span class="hljs-attr">suggestion</span>: <span class="hljs-string">'mock mate'</span> },
+    { <span class="hljs-attr">suggestion</span>: <span class="hljs-string">'mocks proxy'</span> },
+    { <span class="hljs-attr">suggestion</span>: <span class="hljs-string">'mock service'</span> },
+    { <span class="hljs-attr">suggestion</span>: <span class="hljs-string">'mock 数据 环境'</span> },
+    { <span class="hljs-attr">suggestion</span>: <span class="hljs-string">'mocks proxy cif'</span> },
+    { <span class="hljs-attr">suggestion</span>: <span class="hljs-string">'mock 数据'</span> },
+    { <span class="hljs-attr">suggestion</span>: <span class="hljs-string">'mock tr service'</span> },
+    { <span class="hljs-attr">suggestion</span>: <span class="hljs-string">'mock tr'</span> },
+  ],
+}
+</code></pre>
+<p>如果没有匹配到任何搜索提示，会返回一个空数组。<br />
+请求失败将抛出一个异常。</p>
+
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+    <div class="mask hidden"></div>
+    
+      <script src="https://gw.alipayobjects.com/as/g/lark/site-toc/2.0.9/toc.js"></script>
+<script>
+  $('#page-toc').generateToc({
+    contentContainer: $('.typo'),
+    hasFirstLevelHeader: false,
+    offsetTop: 0,
+    affix: {
+      bgColor: "transparent",
+    },
+  })
+</script>
+
+    
+  
+
+    </div>
+    <div class="ant-row footer" style="background-image: linear-gradient(180deg,#050b22 0,#050b22 50%,#032158);">
+  <div class="footer-content">
+    <div class="ant-row footer-desc">
+      <div class="ant-col-8 ant-col-offset-2 footer-team">
+        <h4>我们的团队</h4>
+        <p>中国，上海</p>
+      </div>
+      <div class="ant-col-4 ant-col-offset-2 footer-friend">
+        <h4>友情链接</h4>
+        <p>
+          <a href="http://xujin.org">许进沉思录</a>
+        </p>
+        <p>
+          <a href="https://springcloud.cn">Spring Cloud中国社区</a>
+        </p>
+
+      </div>
+      <div class="ant-col-6 ant-col-offset-2 footer-contact">
+        <h4>联系我们</h4>
+        <p>业务咨询：<a href="mailto: Software_King@qq.com">Software_King@qq.com</a></p>
+        <p>技术咨询：<a href="mailto: Software_King@qq.com">Software_King@qq.com</a></p>
+        
+      </div>
+    </div>
+    <div class="copyright">
+      Venus Plus版权所有 &copy; 2017-2020 Venus中间件团队体系  Powered by xujin.org
+    </div>
+  </div>
+</div>
+
+
+    
+    <div style="display: none">
+    <script src="https://s19.cnzz.com/z_stat.php?id=1268345961&web_id=1268345961" language="JavaScript"></script>
+    </div>
+    
+  </body>
+</html>
+
+

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="base-url" content="http://venusplus.cn/">
+    <link type="image/png" href="/images/head.png" rel="shortcut icon" />
+    <base href="http://venusplus.cn/">
+    <link rel="stylesheet" href="css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_18677_3gesaak2gctyb9.css">
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/vendor/antd.min.css" rel="stylesheet">
+    <link href="css/vendor/swiper.min.css" rel="stylesheet">
+    <title>Venus中间件-文件上传</title>
+    <script src="js/vendor/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.min.js" type="text/javascript" charset="utf-8"></script>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+  </head>
+  <body data-url="/about/env-intro/" class="theme">
+    
+<div class="header">
+  <div>
+    <div class="header-wrapper">
+      <div class="header-logo">
+        <a href=/>
+          <img src="/images/logo.png" alt="">
+        </a>
+      </div>
+      <ul class="sofa-menu ant-menu ant-menu-horizontal ant-menu-light ant-menu-root" role="menu">
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/">首页</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="product-menu">
+                <div class="product-menu-wrapper">
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">快速开发框架</div>
+                      
+                        <a href=/product/venus class="product-menu-title-link">Venus</a>
+                      
+                        <a href=/product/venusboot class="product-menu-title-link">Venus Boot</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">微服务框架</div>
+                      
+                        <a href=/product/venus-cloud class="product-menu-title-link">Venus Cloud</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">经典中间件</div>
+                      
+                        <a href=/product/talos class="product-menu-title-link">Talos网关</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">数据中间件</div>
+                      
+                        <a href=/product/venus-dts class="product-menu-title-link">Venus DTS</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">工具和公共类库</div>
+                      
+                        <a href=/product/venus-codegen class="product-menu-title-link">Venus CodeGen</a>
+                      
+                    </div>
+                  
+                </div>
+              </div>
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="javascript:;">产品</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">文档</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">控制台</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">关于我们</a>
+                
+                
+                
+              </div>
+          </li>
+        
+
+      </ul>
+      <div class="sofa-menu-right pull-right">
+       
+        <div class="search">
+          <span class="ant-input-group-wrapper" style="width: 262px;">
+            <span class="ant-input-wrapper ant-input-group">
+              
+              <span class="ant-input-search ant-input-affix-wrapper">
+                <form class="search-form" action=/search method="get">
+                    <input type="text" name="q" placeholder="请输入搜索内容" value="" class="ant-input" autocomplete="off" />
+                    <input type="hidden" name="title" value="File 文件上传">
+                </form>
+                <span class="ant-input-suffix">
+                  <i class="anticon anticon-search ant-input-search-icon"></i>
+                </span>
+              </span>
+            </span>
+          </span>
+        </div>
+
+       
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="main">
+      
+  
+  
+    <div class="pg-artical " id="pg-artical">
+      <div class="wrap">
+        
+<div class="nav-section">
+  <div class="navbar">
+    <span class="larkicon larkicon-toc"></span>
+  </div>
+  <nav class="nav-container">
+    <ul class="catalog">
+      
+        
+        <li class="current-book">
+          <span class="name">File 文件上传</span>
+          <div class="liebiao-wrapper">
+            
+              <i id="title-liebiao-icon" class="title-liebiao-icon iconfont icon-liebiao"></i>
+            
+
+            <div class="docs-map">
+              <div class="docs-map-wrapper">
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">开发框架</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/#">Venus Framework</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">微服务框架</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/twa">Venus Cloud</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">中间件</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/talos">Talos网关</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">数据库中间件</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/venus-dts">DTS</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">工具类</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/venus-codegen">CodeGen</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">帮助中心</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/user-guide">新人上手</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+              </div>
+            </div>
+          </div>
+
+        </li>
+        
+          <li class="nav-item depth1   " data-currentPath="1" data-rootPath="1"><a href="file/intro" class="">
+              简介
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="2" data-rootPath="2"><a href="file/start" class="">
+              快速上手
+            </a></li>
+        
+          <li class="nav-item depth1   has-children" data-currentPath="3" data-rootPath="3"><span class="larkicon iconfont icon-xialajiantou toggle"></span><span class="name">使用教程</span></li>
+        
+          <li class="nav-item depth2 current hidden " data-currentPath="3.1" data-rootPath="3"><a href="file/env-intro" class="">
+              文件上传
+            </a></li>
+        
+          <li class="nav-item depth2  hidden " data-currentPath="3.2" data-rootPath="3"><span class="name">FAQ</span></li>
+        
+          <li class="nav-item depth3  hidden " data-currentPath="3.2.1" data-rootPath="3"><a href="file/image-resize" class="">
+              图片缩放
+            </a></li>
+        
+          <li class="nav-item depth3  hidden " data-currentPath="3.2.2" data-rootPath="3"><a href="file/env-targetenv" class="">
+              服务环境和文件部署环境
+            </a></li>
+        
+          <li class="nav-item depth3  hidden " data-currentPath="3.2.3" data-rootPath="3"><a href="file/bucket-relation" class="">
+              Bucket 对应关系
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="4" data-rootPath="4"><a href="file/http-api" class="">
+              HTTP API
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="5" data-rootPath="5"><a href="file/cli" class="">
+              CLI
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="6" data-rootPath="6"><a href="file/java-sdk" class="">
+              JAVA SDK
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="7" data-rootPath="7"><a href="jssdk/file" class="">
+              Node.js SDK
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="8" data-rootPath="8"><a href="file/egg-plugin" class="">
+              Egg/Chair 插件
+            </a></li>
+        
+      
+    </ul>
+  </nav>
+</div>
+
+        <div class="main-container">
+          <div id="page-toc"></div>
+          <div class="artical-section larksite">
+    <div class="doc-article">
+      <article class="doc-article-inner">
+        <div class="typo">
+          <h1 class="typo-title" itemprop="title">
+          文件上传
+          </h1>
+          <p class="meta">更新时间: <span>2017-8-29</span></p>
+          <div class="typo-content">
+            <p>Basement File 提供了不同环境的文件上传方案，你可以根据你的不同需求将文件上传到不同的存储模式中:</p>
+<ul>
+<li>如果你需要将文件提供给公网的用户访问，并还想有压不垮的性能。那么你可以通过 Basement File将文件上传到 CDN，百万+ qps 不再是梦。</li>
+<li>如果你有一些内部的设计文档这种不能对外公开的资料。那么你可以通过 Basement File 将文件上传到办公网环境，这时候文件只能在公司内部访问，不会有安全风险的问题。</li>
+<li>如果你有一些很私密的文件，只能给授权用户访问。那么你可以通过 Basement File 将文件上传到私有的环境中，这时候只能通过我们提供的接口才能获取到限时的访问链接。</li>
+</ul>
+<h3 id="上传文件到公网-cdn"><a class="anchor" href="#%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E5%88%B0%E5%85%AC%E7%BD%91-cdn"><span class="octicon octicon-link"></span></a> 上传文件到公网 CDN</h3>
+<h4 id="node-用户"><a class="anchor" href="#node-%E7%94%A8%E6%88%B7"><span class="octicon octicon-link"></span></a> Node 用户</h4>
+<pre><code class="lang-js hljs raw">    ...
+  yield fileClient.upload(<span class="hljs-string">'1.txt'</span>, <span class="hljs-keyword">new</span> Buffer(<span class="hljs-string">'test content'</span>), {
+    <span class="hljs-attr">mode</span>: <span class="hljs-string">'public'</span>
+  });
+    ...
+</code></pre>
+<p><strong>返回值</strong></p>
+<pre><code class="lang-json hljs raw">{ ETag: '9473FDD0D880A43C21B7778D34872157',
+  name: '1.txt',
+  size: 12,
+  type: 'txt',
+  url: 'https://os.alipayobjects.com/lanjue-test/07e85cc3-0392-4e5f-b303-6ad80c511ec7/1.txt' }
+</code></pre>
+<h4 id="java-用户"><a class="anchor" href="#java-%E7%94%A8%E6%88%B7"><span class="octicon octicon-link"></span></a> Java 用户</h4>
+<pre><code class="lang-java hljs raw"><span class="hljs-keyword">final</span> StringReq stringReq = <span class="hljs-keyword">new</span> StringReq(<span class="hljs-string">&quot;1.txt&quot;</span>, <span class="hljs-string">&quot;test content&quot;</span>, FileEnv.PUBLIC,
+                <span class="hljs-string">&quot;shouna.ysn&quot;</span>);
+<span class="hljs-keyword">final</span> FileMetadata fileMetadata = fileClient.upload(stringReq);
+</code></pre>
+<p><strong>返回值</strong></p>
+<p><img src="https://zos.alipayobjects.com/skylark/d8f64b6a-16e9-4521-9bec-67c5f9532d8e/attach/6755/aad5b2aff7b49632/image.png" alt="image" class="align-none" /></p>
+<h3 id="上传到办公网"><a class="anchor" href="#%E4%B8%8A%E4%BC%A0%E5%88%B0%E5%8A%9E%E5%85%AC%E7%BD%91"><span class="octicon octicon-link"></span></a> 上传到办公网</h3>
+<h4 id="node-用户-1"><a class="anchor" href="#node-%E7%94%A8%E6%88%B7-1"><span class="octicon octicon-link"></span></a> Node 用户</h4>
+<pre><code class="lang-js hljs raw">    ...
+  yield fileClient.upload(<span class="hljs-string">'1.txt'</span>, <span class="hljs-keyword">new</span> Buffer(<span class="hljs-string">'test content'</span>), {
+    <span class="hljs-attr">mode</span>: <span class="hljs-string">'internal'</span>
+  });
+    ...
+</code></pre>
+<p><strong>返回值</strong></p>
+<pre><code class="lang-json hljs raw">{ ETag: '9473FDD0D880A43C21B7778D34872157',
+  name: '1.txt',
+  size: 12,
+  type: 'txt',
+  url: 'http://alipay-rmsdeploy-image.cn-hangzhou.alipay.aliyun-inc.com/lanjue-test/1.txt' }
+</code></pre>
+<h4 id="java-用户-1"><a class="anchor" href="#java-%E7%94%A8%E6%88%B7-1"><span class="octicon octicon-link"></span></a> Java 用户</h4>
+<pre><code class="lang-java hljs raw"><span class="hljs-keyword">final</span> StringReq stringReq = <span class="hljs-keyword">new</span> StringReq(<span class="hljs-string">&quot;1.txt&quot;</span>, <span class="hljs-string">&quot;test content&quot;</span>, FileEnv.INTERNAL,
+                <span class="hljs-string">&quot;shouna.ysn&quot;</span>);
+<span class="hljs-keyword">final</span> FileMetadata fileMetadata = fileClient.upload(stringReq);
+</code></pre>
+<p><strong>返回值</strong></p>
+<p><img src="https://zos.alipayobjects.com/skylark/1e8ba27b-e047-4d54-9f69-fdfa70363bfb/attach/6755/02bb3f5998ba12a5/image.png" alt="image" class="align-none" /></p>
+<h3 id="上传到防盗链"><a class="anchor" href="#%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%B2%E7%9B%97%E9%93%BE"><span class="octicon octicon-link"></span></a> 上传到防盗链</h3>
+<h4 id="java-用户-2"><a class="anchor" href="#java-%E7%94%A8%E6%88%B7-2"><span class="octicon octicon-link"></span></a> Java 用户</h4>
+<pre><code class="lang-java hljs raw"><span class="hljs-keyword">final</span> StringReq stringReq = <span class="hljs-keyword">new</span> StringReq(<span class="hljs-string">&quot;1.txt&quot;</span>, <span class="hljs-string">&quot;test content&quot;</span>, FileEnv.STRICT,
+                <span class="hljs-string">&quot;shouna.ysn&quot;</span>);
+<span class="hljs-keyword">final</span> FileMetadata fileMetadata = fileClient.upload(stringReq);
+</code></pre>
+<p><strong>返回值</strong></p>
+<p><img src="https://zos.alipayobjects.com/skylark/adbcd850-b0f7-4446-b573-2846e7637230/attach/6755/4a1a77bf8ad3dfee/image.png" alt="image" class="align-none" /></p>
+<h3 id="上传到沙箱环境"><a class="anchor" href="#%E4%B8%8A%E4%BC%A0%E5%88%B0%E6%B2%99%E7%AE%B1%E7%8E%AF%E5%A2%83"><span class="octicon octicon-link"></span></a> 上传到沙箱环境</h3>
+<p>沙箱环境是公司提供给外部的开发联调环境，公网可访问。Basemnet File 针对性地提供了沙箱环境的文件存储服务</p>
+<pre><code class="lang-java hljs raw"><span class="hljs-keyword">final</span> StringReq stringReq = <span class="hljs-keyword">new</span> StringReq(<span class="hljs-string">&quot;1.txt&quot;</span>, <span class="hljs-string">&quot;test content&quot;</span>, FileEnv.NET,
+                <span class="hljs-string">&quot;shouna.ysn&quot;</span>);
+<span class="hljs-keyword">final</span> FileMetadata fileMetadata = fileClient.upload(stringReq);
+</code></pre>
+<p><strong>返回值</strong><br />
+<img src="https://zos.alipayobjects.com/skylark/4edd9eb6-89bd-4416-a331-299468bd4509/attach/6755/a745f81bf15b576b/image.png" alt="image" class="align-none" /></p>
+
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+    <div class="mask hidden"></div>
+    
+      <script src="https://gw.alipayobjects.com/as/g/lark/site-toc/2.0.9/toc.js"></script>
+<script>
+  $('#page-toc').generateToc({
+    contentContainer: $('.typo'),
+    hasFirstLevelHeader: false,
+    offsetTop: 0,
+    affix: {
+      bgColor: "transparent",
+    },
+  })
+</script>
+
+    
+  
+
+    </div>
+    <div class="ant-row footer" style="background-image: linear-gradient(180deg,#050b22 0,#050b22 50%,#032158);">
+  <div class="footer-content">
+    <div class="ant-row footer-desc">
+      <div class="ant-col-8 ant-col-offset-2 footer-team">
+        <h4>我们的团队</h4>
+        <p>中国，上海</p>
+      </div>
+      <div class="ant-col-4 ant-col-offset-2 footer-friend">
+        <h4>友情链接</h4>
+        <p>
+          <a href="http://xujin.org">许进沉思录</a>
+        </p>
+        <p>
+          <a href="https://springcloud.cn">Spring Cloud中国社区</a>
+        </p>
+
+      </div>
+      <div class="ant-col-6 ant-col-offset-2 footer-contact">
+        <h4>联系我们</h4>
+        <p>业务咨询：<a href="mailto: Software_King@qq.com">Software_King@qq.com</a></p>
+        <p>技术咨询：<a href="mailto: Software_King@qq.com">Software_King@qq.com</a></p>
+        
+      </div>
+    </div>
+    <div class="copyright">
+      Venus Plus版权所有 &copy; 2017-2020 Venus中间件团队体系  Powered by xujin.org
+    </div>
+  </div>
+</div>
+
+
+    
+    <div style="display: none">
+    <script src="https://s19.cnzz.com/z_stat.php?id=1268345961&web_id=1268345961" language="JavaScript"></script>
+    </div>
+    
+  </body>
+</html>
+
+

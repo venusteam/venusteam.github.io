@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="base-url" content="http://venusplus.cn/">
+    <link type="image/png" href="/images/head.png" rel="shortcut icon" />
+    <base href="http://venusplus.cn/">
+    <link rel="stylesheet" href="css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_18677_3gesaak2gctyb9.css">
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/vendor/antd.min.css" rel="stylesheet">
+    <link href="css/vendor/swiper.min.css" rel="stylesheet">
+    <title>Venus中间件-JAVA SDK</title>
+    <script src="js/vendor/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.min.js" type="text/javascript" charset="utf-8"></script>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+  </head>
+  <body data-url="/user-guide/midtiw/" class="theme">
+    
+<div class="header">
+  <div>
+    <div class="header-wrapper">
+      <div class="header-logo">
+        <a href=/>
+          <img src="/images/logo.png" alt="">
+        </a>
+      </div>
+      <ul class="sofa-menu ant-menu ant-menu-horizontal ant-menu-light ant-menu-root" role="menu">
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/">首页</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="product-menu">
+                <div class="product-menu-wrapper">
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">快速开发框架</div>
+                      
+                        <a href=/product/venus class="product-menu-title-link">Venus</a>
+                      
+                        <a href=/product/venusboot class="product-menu-title-link">Venus Boot</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">微服务框架</div>
+                      
+                        <a href=/product/venus-cloud class="product-menu-title-link">Venus Cloud</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">经典中间件</div>
+                      
+                        <a href=/product/talos class="product-menu-title-link">Talos网关</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">数据中间件</div>
+                      
+                        <a href=/product/venus-dts class="product-menu-title-link">Venus DTS</a>
+                      
+                    </div>
+                  
+                    <div class="product-menu-col">
+                      <div class="product-menu-title">工具和公共类库</div>
+                      
+                        <a href=/product/venus-codegen class="product-menu-title-link">Venus CodeGen</a>
+                      
+                    </div>
+                  
+                </div>
+              </div>
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="javascript:;">产品</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">文档</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">控制台</a>
+                
+                
+                
+              </div>
+          </li>
+        
+          <li class="ant-menu-item sofa-menu-item  ">
+              
+              <div class="sofa-menu-item-text">
+                
+                  <a href="/#">关于我们</a>
+                
+                
+                
+              </div>
+          </li>
+        
+
+      </ul>
+      <div class="sofa-menu-right pull-right">
+       
+        <div class="search">
+          <span class="ant-input-group-wrapper" style="width: 262px;">
+            <span class="ant-input-wrapper ant-input-group">
+              
+              <span class="ant-input-search ant-input-affix-wrapper">
+                <form class="search-form" action=/search method="get">
+                    <input type="text" name="q" placeholder="请输入搜索内容" value="" class="ant-input" autocomplete="off" />
+                    <input type="hidden" name="title" value="新人上手">
+                </form>
+                <span class="ant-input-suffix">
+                  <i class="anticon anticon-search ant-input-search-icon"></i>
+                </span>
+              </span>
+            </span>
+          </span>
+        </div>
+
+       
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="main">
+      
+  
+  
+    <div class="pg-artical " id="pg-artical">
+      <div class="wrap">
+        
+<div class="nav-section">
+  <div class="navbar">
+    <span class="larkicon larkicon-toc"></span>
+  </div>
+  <nav class="nav-container">
+    <ul class="catalog">
+      
+        
+        <li class="current-book">
+          <span class="name">新人上手3</span>
+          <div class="liebiao-wrapper">
+            
+              <i id="title-liebiao-icon" class="title-liebiao-icon iconfont icon-liebiao"></i>
+            
+
+            <div class="docs-map">
+              <div class="docs-map-wrapper">
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">开发框架</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/#">Venus Framework</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">微服务框架</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/twa">Venus Cloud</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">中间件</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/talos">Talos网关</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">数据库中间件</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/venus-dts">DTS</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">工具类</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/venus-codegen">CodeGen</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+                  
+                  <div class="docs-map-item">
+                    <div>
+                      <h3 class="title">帮助中心</h3>
+                      
+                        <div class="docs-map-item-link-wrapper">
+                          <a class="docs-map-item-link" href="/user-guide">新人上手</a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  
+                
+              </div>
+            </div>
+          </div>
+
+        </li>
+        
+          <li class="nav-item depth1   " data-currentPath="1" data-rootPath="1"><a href="user-guide/readme" class="">
+              简介
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="2" data-rootPath="2"><a href="user-guide/product-application-intro" class="">
+              产品与应用
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="3" data-rootPath="3"><a href="user-guide/sprint-intro" class="">
+              应用研发
+            </a></li>
+        
+          <li class="nav-item depth1   " data-currentPath="4" data-rootPath="4"><a href="user-guide/service-intro" class="">
+              服务
+            </a></li>
+        
+      
+    </ul>
+  </nav>
+</div>
+
+        <div class="main-container">
+          <div id="page-toc"></div>
+          <div class="artical-section larksite">
+    <div class="doc-article">
+      <article class="doc-article-inner">
+        <div class="typo">
+          <h1 class="typo-title" itemprop="title">
+          JAVA SDK
+          </h1>
+          <p class="meta">更新时间: <span>2017-2-21</span></p>
+          <div class="typo-content">
+            <p><h2 id="配置客户端"><a class="anchor" href="#%E9%85%8D%E7%BD%AE%E5%AE%A2%E6%88%B7%E7%AB%AF"><span class="octicon octicon-link"></span></a> 配置客户端</h2>
+<h3 id="普通-java-应用"><a class="anchor" href="#%E6%99%AE%E9%80%9A-java-%E5%BA%94%E7%94%A8"><span class="octicon octicon-link"></span></a> 普通 Java 应用</h3>
+<h4 id="配置依赖"><a class="anchor" href="#%E9%85%8D%E7%BD%AE%E4%BE%9D%E8%B5%96"><span class="octicon octicon-link"></span></a> 配置依赖</h4>
+<pre><code class="lang-xml hljs raw"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.alipay.basement<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>basement-file<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.2.0<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<h4 id="配置上传客户端"><a class="anchor" href="#%E9%85%8D%E7%BD%AE%E4%B8%8A%E4%BC%A0%E5%AE%A2%E6%88%B7%E7%AB%AF"><span class="octicon octicon-link"></span></a> 配置上传客户端</h4>
+<pre><code class="lang-java hljs raw">    <span class="hljs-keyword">final</span> FileClientConfig fileClientConfig = <span class="hljs-keyword">new</span> FileClientConfig();
+    fileClientConfig.setAppId(<span class="hljs-string">&quot;xxxx&quot;</span>);
+    fileClientConfig.setMasterKey(<span class="hljs-string">&quot;xxxx&quot;</span>);
+    fileClientConfig.setEndpoint(<span class="hljs-string">&quot;<a href="https://basement-gzone.alipay.com&quot;">https://basement-gzone.alipay.com&quot;</a></span>);
+    fileClientConfig.setAppName(<span class="hljs-string">&quot;lanjue&quot;</span>);
+    fileClientConfig.setTargetEnv(<span class="hljs-string">&quot;DEV&quot;</span>);
+    <span class="hljs-keyword">final</span> DefaultFileClient fileClient = <span class="hljs-keyword">new</span> DefaultFileClient(fileClientConfig);
+</code></pre>
+<h3 id="spring-应用"><a class="anchor" href="#spring-%E5%BA%94%E7%94%A8"><span class="octicon octicon-link"></span></a> Spring 应用</h3>
+<h4 id="配置依赖-1"><a class="anchor" href="#%E9%85%8D%E7%BD%AE%E4%BE%9D%E8%B5%96-1"><span class="octicon octicon-link"></span></a> 配置依赖</h4>
+<pre><code class="lang-xml hljs raw"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.alipay.basement<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>basement-file<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.2.0<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<h4 id="配置上传客户端-1"><a class="anchor" href="#%E9%85%8D%E7%BD%AE%E4%B8%8A%E4%BC%A0%E5%AE%A2%E6%88%B7%E7%AB%AF-1"><span class="octicon octicon-link"></span></a> 配置上传客户端</h4>
+<pre><code class="lang-xml hljs raw"><span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;fileClientConfig&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.alipay.basement.file.config.FileClientConfig&quot;</span>&gt;</span>
+        <span class="hljs-comment">&lt;!&ndash;<a href="https://basement.alipay.com">https://basement.alipay.com</a> 上产品的访问key&ndash;&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;appId&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;xxxxx&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;masterKey&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;xxxxxx&quot;</span>/&gt;</span>
+        <span class="hljs-comment">&lt;!&ndash; 线下环境: endpoint: <a href="https://basement-gzone.alipay.com">https://basement-gzone.alipay.com</a> targetEnv: DEV&ndash;&gt;</span>
+        <span class="hljs-comment">&lt;!&ndash; 生产环境(GZone应用): endpoint: <a href="http://basement-api.${domain_name">http://basement-api.${domain_name</a>} targetEnv: PROD &ndash;&gt;</span>
+        <span class="hljs-comment">&lt;!&ndash; 生产环境(RZone应用): endpoint: <a href="http://basement-api.zue.alipay.com">http://basement-api.zue.alipay.com</a> targetEnv: PROD &ndash;&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;endpoint&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;<a href="https://basement-gzone.alipay.com&quot;">https://basement-gzone.alipay.com&quot;</a></span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;targetEnv&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;DEV&quot;</span>/&gt;</span>
+        <span class="hljs-comment">&lt;!&ndash;系统名&ndash;&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;appName&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;lanjue&quot;</span>/&gt;</span></p>
+
+<pre><code>    &lt;span class=&quot;hljs-comment&quot;&gt;&amp;lt;!--(可选) 批量上传接口的超时时间--&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;property&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;batchUploadTimeout&amp;quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;value&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;60000&amp;quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-comment&quot;&gt;&amp;lt;!--(可选) 连接到服务端的超时时间--&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;property&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;connectionTimeout&amp;quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;value&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;5000&amp;quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-comment&quot;&gt;&amp;lt;!--(可选) 请求超时时间--&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;property&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;socketTimeout&amp;quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;value&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;60000&amp;quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;bean&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;bean&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;fileClient&amp;quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;com.alipay.basement.file.impl.DefaultFileClient&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;constructor-arg&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;fileClientConfig&amp;quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;ref&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;fileClientConfig&amp;quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;bean&lt;/span&gt;&amp;gt;&lt;/span&gt;
+</code></pre>
+
+<p></code></pre>
+<h3 id="sofa-应用"><a class="anchor" href="#sofa-%E5%BA%94%E7%94%A8"><span class="octicon octicon-link"></span></a> Sofa 应用</h3>
+<h3 id="配置依赖-2"><a class="anchor" href="#%E9%85%8D%E7%BD%AE%E4%BE%9D%E8%B5%96-2"><span class="octicon octicon-link"></span></a> 配置依赖</h3>
+<p><strong>总 pom </strong></p>
+<pre><code class="lang-xml hljs raw"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.alipay.basement<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>basement-file<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.2.0<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<p><strong>对应业务 bundle </strong></p>
+<pre><code class="lang-xml hljs raw"> <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.alipay.basement<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>basement-file<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<p><strong> ace pom </strong></p>
+<pre><code class="lang-xml hljs raw"><span class="hljs-tag">&lt;<span class="hljs-name">artifactItem</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.alipay.basement<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>basement-file<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">artifactItem</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">artifactItem</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.alipay.basement<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>basement-base<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">artifactItem</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">artifactItem</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>httpcore<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">artifactItem</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">artifactItem</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>httpclient<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">artifactItem</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">artifactItem</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>httpmime<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">artifactItem</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">artifactItem</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.google.gson<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>gson<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">artifactItem</span>&gt;</span></p>
+
+<p></code></pre>
+<h4 id="配置上传客户端-2"><a class="anchor" href="#%E9%85%8D%E7%BD%AE%E4%B8%8A%E4%BC%A0%E5%AE%A2%E6%88%B7%E7%AB%AF-2"><span class="octicon octicon-link"></span></a> 配置上传客户端</h4>
+<pre><code class="lang-xml hljs raw"><span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;fileClientConfig&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.alipay.basement.file.config.FileClientConfig&quot;</span>&gt;</span>
+        <span class="hljs-comment">&lt;!&ndash;<a href="https://basement.alipay.com">https://basement.alipay.com</a> 上产品的访问key&ndash;&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;appId&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;xxxxx&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;masterKey&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;xxxxxx&quot;</span>/&gt;</span>
+        <span class="hljs-comment">&lt;!&ndash; 线下环境: endpoint: <a href="https://basement-gzone.alipay.com">https://basement-gzone.alipay.com</a> targetEnv: DEV&ndash;&gt;</span>
+        <span class="hljs-comment">&lt;!&ndash; 生产环境(GZone应用): endpoint: <a href="http://basement-api.${domain_name">http://basement-api.${domain_name</a>} targetEnv: PROD &ndash;&gt;</span>
+        <span class="hljs-comment">&lt;!&ndash; 生产环境(RZone应用): endpoint: <a href="http://basement-api.zue.alipay.com">http://basement-api.zue.alipay.com</a> targetEnv: PROD &ndash;&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;endpoint&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;<a href="https://basement-gzone.alipay.com&quot;">https://basement-gzone.alipay.com&quot;</a></span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;targetEnv&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;DEV&quot;</span>/&gt;</span>
+        <span class="hljs-comment">&lt;!&ndash;系统名&ndash;&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;appName&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;lanjue&quot;</span>/&gt;</span></p>
+
+<pre><code>    &lt;span class=&quot;hljs-comment&quot;&gt;&amp;lt;!--(可选) 批量上传接口的超时时间--&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;property&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;batchUploadTimeout&amp;quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;value&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;60000&amp;quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-comment&quot;&gt;&amp;lt;!--(可选) 连接到服务端的超时时间--&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;property&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;connectionTimeout&amp;quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;value&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;5000&amp;quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-comment&quot;&gt;&amp;lt;!--(可选) 请求超时时间--&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;property&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;socketTimeout&amp;quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;value&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;60000&amp;quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;bean&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;bean&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;fileClient&amp;quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;com.alipay.basement.file.impl.DefaultFileClient&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;constructor-arg&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;fileClientConfig&amp;quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;ref&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&amp;quot;fileClientConfig&amp;quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;bean&lt;/span&gt;&amp;gt;&lt;/span&gt;
+</code></pre>
+
+<p></code></pre>
+<h2 id="接口详情"><a class="anchor" href="#%E6%8E%A5%E5%8F%A3%E8%AF%A6%E6%83%85"><span class="octicon octicon-link"></span></a> 接口详情</h2>
+<blockquote>
+<p>接口类: com.alipay.basement.file.FileClient</p>
+</blockquote>
+<h3 id="上传结果对象说明"><a class="anchor" href="#%E4%B8%8A%E4%BC%A0%E7%BB%93%E6%9E%9C%E5%AF%B9%E8%B1%A1%E8%AF%B4%E6%98%8E"><span class="octicon octicon-link"></span></a> 上传结果对象说明:</h3>
+<blockquote>
+<p>结果类: com.alipay.basement.file.model.FileMetadata</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>文件名</td>
+</tr>
+<tr>
+<td>url</td>
+<td>文件的访问地址</td>
+</tr>
+<tr>
+<td>size</td>
+<td>文件大小，单位 B</td>
+</tr>
+<tr>
+<td>eTag</td>
+<td>文件在oss的唯一标记</td>
+</tr>
+</tbody>
+</table>
+<h3 id="上传本地文件"><a class="anchor" href="#%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6"><span class="octicon octicon-link"></span></a> 上传本地文件</h3>
+<blockquote>
+<p>FileMetadata upload(File file, String userId, FileEnv env)</p>
+</blockquote>
+<h4 id="请求参数"><a class="anchor" href="#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0"><span class="octicon octicon-link"></span></a> 请求参数</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>file</td>
+<td>File</td>
+<td>待上传的本地文件</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>String</td>
+<td>文件的上传者，一般为uid或工号</td>
+</tr>
+<tr>
+<td>FileEnv</td>
+<td>Enum</td>
+<td>文件的部署环境，参见:  <a href="https://lark.alipay.com/basement/user-guide/mwo8nb/edit" target="_blank" rel="noopener">部署环境说明</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="上传本地文件且自定义路径"><a class="anchor" href="#%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E4%B8%94%E8%87%AA%E5%AE%9A%E4%B9%89%E8%B7%AF%E5%BE%84"><span class="octicon octicon-link"></span></a> 上传本地文件且自定义路径</h3>
+<blockquote>
+<p>FileMetadata upload(FileReq fileReq)</p>
+</blockquote>
+<h4 id="请求参数-1"><a class="anchor" href="#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0-1"><span class="octicon octicon-link"></span></a> 请求参数</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fileReq.file</td>
+<td>File</td>
+<td>待上传的本地文件</td>
+</tr>
+<tr>
+<td>fileReq.userId</td>
+<td>String</td>
+<td>文件的上传者，一般为uid或工号</td>
+</tr>
+<tr>
+<td>fileReq.FileEnv</td>
+<td>Enum</td>
+<td>文件的部署环境，参见:  <a href="https://lark.alipay.com/basement/user-guide/mwo8nb/edit" target="_blank" rel="noopener">部署环境说明</a></td>
+</tr>
+<tr>
+<td>fileReq.targetPath</td>
+<td>String</td>
+<td>文件在OSS的存储路径,如果指定该参数,需要用户自己防止文件覆盖的情况</td>
+</tr>
+<tr>
+<td>fileReq.httpHeaders</td>
+<td>HttpHeaders</td>
+<td>http头信息,可控制文件的http响应头</td>
+</tr>
+</tbody>
+</table>
+<h3 id="通过文件流上传到-oss"><a class="anchor" href="#%E9%80%9A%E8%BF%87%E6%96%87%E4%BB%B6%E6%B5%81%E4%B8%8A%E4%BC%A0%E5%88%B0-oss"><span class="octicon octicon-link"></span></a> 通过文件流上传到 OSS</h3>
+<blockquote>
+<p>FileMetadata upload(InputStream stream, String fileName, String userId, FileEnv env)</p>
+</blockquote>
+<h4 id="请求参数-2"><a class="anchor" href="#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0-2"><span class="octicon octicon-link"></span></a> 请求参数</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>stream</td>
+<td>InputStream</td>
+<td>待上传的数据流</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>String</td>
+<td>文件的上传者，一般为uid或工号</td>
+</tr>
+<tr>
+<td>fileEnv</td>
+<td>Enum</td>
+<td>文件的部署环境，参见:  <a href="https://lark.alipay.com/basement/user-guide/mwo8nb/edit" target="_blank" rel="noopener">部署环境说明</a></td>
+</tr>
+<tr>
+<td>fileName</td>
+<td>String</td>
+<td>上传的数据对应的源文件名</td>
+</tr>
+</tbody>
+</table>
+<h3 id="通过文件流上传且支持自定义路径"><a class="anchor" href="#%E9%80%9A%E8%BF%87%E6%96%87%E4%BB%B6%E6%B5%81%E4%B8%8A%E4%BC%A0%E4%B8%94%E6%94%AF%E6%8C%81%E8%87%AA%E5%AE%9A%E4%B9%89%E8%B7%AF%E5%BE%84"><span class="octicon octicon-link"></span></a> 通过文件流上传且支持自定义路径</h3>
+<blockquote>
+<p>FileMetadata upload(StreamReq streamReq)</p>
+</blockquote>
+<h4 id="请求参数-3"><a class="anchor" href="#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0-3"><span class="octicon octicon-link"></span></a> 请求参数</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>streamReq.stream</td>
+<td>InputStream</td>
+<td>待上传的数据流</td>
+</tr>
+<tr>
+<td>streamReq.userId</td>
+<td>String</td>
+<td>文件的上传者，一般为uid或工号</td>
+</tr>
+<tr>
+<td>streamReq.FileEnv</td>
+<td>Enum</td>
+<td>文件的部署环境，参见:  <a href="https://lark.alipay.com/basement/user-guide/mwo8nb/edit" target="_blank" rel="noopener">部署环境说明</a></td>
+</tr>
+<tr>
+<td>streamReq.targetPath</td>
+<td>String</td>
+<td>文件在OSS的存储路径,如果指定该参数,需要用户自己防止文件覆盖的情况</td>
+</tr>
+<tr>
+<td>streamReq.httpHeaders</td>
+<td>HttpHeaders</td>
+<td>http头信息,可控制文件的http响应头</td>
+</tr>
+<tr>
+<td>streamReq.fileName</td>
+<td>String</td>
+<td>上传的数据对应的源文件名</td>
+</tr>
+</tbody>
+</table>
+<h3 id="上传一段文本内容到-oss"><a class="anchor" href="#%E4%B8%8A%E4%BC%A0%E4%B8%80%E6%AE%B5%E6%96%87%E6%9C%AC%E5%86%85%E5%AE%B9%E5%88%B0-oss"><span class="octicon octicon-link"></span></a> 上传一段文本内容到 OSS</h3>
+<blockquote>
+<p>FileMetadata upload(StringReq stringReq)</p>
+</blockquote>
+<h4 id="请求参数-4"><a class="anchor" href="#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0-4"><span class="octicon octicon-link"></span></a> 请求参数</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>stringReq.data</td>
+<td>String</td>
+<td>待上传的文本</td>
+</tr>
+<tr>
+<td>stringReq.userId</td>
+<td>String</td>
+<td>文件的上传者，一般为uid或工号</td>
+</tr>
+<tr>
+<td>stringReq.FileEnv</td>
+<td>Enum</td>
+<td>文件的部署环境，参见:  <a href="https://lark.alipay.com/basement/user-guide/mwo8nb/edit" target="_blank" rel="noopener">部署环境说明</a></td>
+</tr>
+<tr>
+<td>stringReq.targetPath</td>
+<td>String</td>
+<td>文件在OSS的存储路径,如果指定该参数,需要用户自己防止文件覆盖的情况</td>
+</tr>
+<tr>
+<td>stringReq.httpHeaders</td>
+<td>HttpHeaders</td>
+<td>http头信息,可控制文件的http响应头</td>
+</tr>
+<tr>
+<td>stringReq.fileName</td>
+<td>String</td>
+<td>上传的数据对应的源文件名</td>
+</tr>
+</tbody>
+</table>
+<h3 id="移除一个文件"><a class="anchor" href="#%E7%A7%BB%E9%99%A4%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6"><span class="octicon octicon-link"></span></a> 移除一个文件</h3>
+<blockquote>
+<p>boolean remove(String url, String userId)</p>
+</blockquote>
+<h4 id="请求参数-5"><a class="anchor" href="#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0-5"><span class="octicon octicon-link"></span></a> 请求参数</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>url</td>
+<td>String</td>
+<td>待删除的文件的url</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>String</td>
+<td>文件的上传者，一般为uid或工号</td>
+</tr>
+</tbody>
+</table>
+<h4 id="响应结果"><a class="anchor" href="#%E5%93%8D%E5%BA%94%E7%BB%93%E6%9E%9C"><span class="octicon octicon-link"></span></a> 响应结果</h4>
+<blockquote>
+<p>成功返回true，否则返回false</p>
+</blockquote>
+<h3 id="将一个链接地址的内容上传到-oss"><a class="anchor" href="#%E5%B0%86%E4%B8%80%E4%B8%AA%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80%E7%9A%84%E5%86%85%E5%AE%B9%E4%B8%8A%E4%BC%A0%E5%88%B0-oss"><span class="octicon octicon-link"></span></a> 将一个链接地址的内容上传到 OSS</h3>
+<blockquote>
+<p>FileMetadata transfer(String url, String userId, FileEnv env)</p>
+</blockquote>
+<h4 id="请求参数-6"><a class="anchor" href="#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0-6"><span class="octicon octicon-link"></span></a> 请求参数</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>url</td>
+<td>String</td>
+<td>源文件url</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>String</td>
+<td>文件的上传者，一般为uid或工号</td>
+</tr>
+<tr>
+<td>fileEnv</td>
+<td>Enum</td>
+<td>文件的部署环境，参见:  <a href="https://lark.alipay.com/basement/user-guide/mwo8nb/edit" target="_blank" rel="noopener">部署环境说明</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="批量上传一个目录下的文件保留目录格式"><a class="anchor" href="#%E6%89%B9%E9%87%8F%E4%B8%8A%E4%BC%A0%E4%B8%80%E4%B8%AA%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%BF%9D%E7%95%99%E7%9B%AE%E5%BD%95%E6%A0%BC%E5%BC%8F"><span class="octicon octicon-link"></span></a> 批量上传一个目录下的文件(保留目录格式)</h3>
+<blockquote>
+<p>List batchUpload(File directory, String userId, FileEnv env)</p>
+</blockquote>
+<h4 id="请求参数-7"><a class="anchor" href="#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0-7"><span class="octicon octicon-link"></span></a> 请求参数</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>directory</td>
+<td>File</td>
+<td>本地目录</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>String</td>
+<td>文件的上传者，一般为uid或工号</td>
+</tr>
+<tr>
+<td>fileEnv</td>
+<td>Enum</td>
+<td>文件的部署环境，参见:  <a href="https://lark.alipay.com/basement/user-guide/mwo8nb/edit" target="_blank" rel="noopener">部署环境说明</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="自定义-http-头批量上传一个目录下的文件保留目录格式"><a class="anchor" href="#%E8%87%AA%E5%AE%9A%E4%B9%89-http-%E5%A4%B4%E6%89%B9%E9%87%8F%E4%B8%8A%E4%BC%A0%E4%B8%80%E4%B8%AA%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%BF%9D%E7%95%99%E7%9B%AE%E5%BD%95%E6%A0%BC%E5%BC%8F"><span class="octicon octicon-link"></span></a> 自定义 HTTP 头批量上传一个目录下的文件(保留目录格式)</h3>
+<blockquote>
+<p>List batchUpload(File directory, String userId, FileEnv env, HttpHeaders httpHeaders)</p>
+</blockquote>
+<h4 id="请求参数-8"><a class="anchor" href="#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0-8"><span class="octicon octicon-link"></span></a> 请求参数</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>directory</td>
+<td>File</td>
+<td>本地目录</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>String</td>
+<td>文件的上传者，一般为uid或工号</td>
+</tr>
+<tr>
+<td>fileEnv</td>
+<td>Enum</td>
+<td>文件的部署环境，参见:  <a href="https://lark.alipay.com/basement/user-guide/mwo8nb/edit" target="_blank" rel="noopener">部署环境说明</a></td>
+</tr>
+<tr>
+<td>httpHeaders</td>
+<td>HttpHeaders</td>
+<td>http头信息,可控制文件的http响应头</td>
+</tr>
+</tbody>
+</table>
+<h3 id="使用自定义跟路径批量上传一个目录下的文件保留目录格式"><a class="anchor" href="#%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E8%B7%9F%E8%B7%AF%E5%BE%84%E6%89%B9%E9%87%8F%E4%B8%8A%E4%BC%A0%E4%B8%80%E4%B8%AA%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%BF%9D%E7%95%99%E7%9B%AE%E5%BD%95%E6%A0%BC%E5%BC%8F"><span class="octicon octicon-link"></span></a> 使用自定义跟路径批量上传一个目录下的文件(保留目录格式)</h3>
+<blockquote>
+<p>List batchUpload(File directory, String customRootPath, String userId,FileEnv env)</p>
+</blockquote>
+<h4 id="请求参数-9"><a class="anchor" href="#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0-9"><span class="octicon octicon-link"></span></a> 请求参数</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>directory</td>
+<td>File</td>
+<td>本地目录</td>
+</tr>
+<tr>
+<td>customRootPath</td>
+<td>String</td>
+<td>自定义存储目录</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>String</td>
+<td>文件的上传者，一般为uid或工号</td>
+</tr>
+<tr>
+<td>fileEnv</td>
+<td>Enum</td>
+<td>文件的部署环境，参见:  <a href="https://lark.alipay.com/basement/user-guide/mwo8nb/edit" target="_blank" rel="noopener">部署环境说明</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="使用自定义跟路径批量上传一个目录下的文件保留目录格式，自定义-http-头"><a class="anchor" href="#%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E8%B7%9F%E8%B7%AF%E5%BE%84%E6%89%B9%E9%87%8F%E4%B8%8A%E4%BC%A0%E4%B8%80%E4%B8%AA%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%BF%9D%E7%95%99%E7%9B%AE%E5%BD%95%E6%A0%BC%E5%BC%8F%EF%BC%8C%E8%87%AA%E5%AE%9A%E4%B9%89-http-%E5%A4%B4"><span class="octicon octicon-link"></span></a> 使用自定义跟路径批量上传一个目录下的文件(保留目录格式)，自定义 HTTP 头</h3>
+<blockquote>
+<p>List batchUpload(File directory, String customRootPath, String userId,FileEnv env, HttpHeaders httpHeaders)</p>
+</blockquote>
+<h4 id="请求参数-10"><a class="anchor" href="#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0-10"><span class="octicon octicon-link"></span></a> 请求参数</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>directory</td>
+<td>File</td>
+<td>本地目录</td>
+</tr>
+<tr>
+<td>customRootPath</td>
+<td>String</td>
+<td>自定义存储目录</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>String</td>
+<td>文件的上传者，一般为uid或工号</td>
+</tr>
+<tr>
+<td>fileEnv</td>
+<td>Enum</td>
+<td>文件的部署环境，参见:  <a href="https://lark.alipay.com/basement/user-guide/mwo8nb/edit" target="_blank" rel="noopener">部署环境说明</a></td>
+</tr>
+<tr>
+<td>httpHeaders</td>
+<td>HttpHeaders</td>
+<td>http头信息,可控制文件的http响应头</td>
+</tr>
+</tbody>
+</table>
+<h3 id="从一个压缩包批量上传文件到服务器，压缩包可为本地文件流或服务器可下载url"><a class="anchor" href="#%E4%BB%8E%E4%B8%80%E4%B8%AA%E5%8E%8B%E7%BC%A9%E5%8C%85%E6%89%B9%E9%87%8F%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%8C%E5%8E%8B%E7%BC%A9%E5%8C%85%E5%8F%AF%E4%B8%BA%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E6%B5%81%E6%88%96%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%AF%E4%B8%8B%E8%BD%BDurl"><span class="octicon octicon-link"></span></a> 从一个压缩包批量上传文件到服务器，压缩包可为本地文件流或服务器可下载URL</h3>
+<blockquote>
+<p>List batchUpload(ArchiveFile archiveFile)</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>archiveFile.customRootPath</td>
+<td>String</td>
+<td>自定义存储目录</td>
+</tr>
+<tr>
+<td>archiveFile.userId</td>
+<td>String</td>
+<td>文件的上传者，一般为uid或工号</td>
+</tr>
+<tr>
+<td>archiveFile.fileEnv</td>
+<td>Enum</td>
+<td>文件的部署环境，参见:  <a href="https://lark.alipay.com/basement/user-guide/mwo8nb/edit" target="_blank" rel="noopener">部署环境说明</a></td>
+</tr>
+<tr>
+<td>archiveFile.httpHeaders</td>
+<td>HttpHeaders</td>
+<td>http头信息,可控制文件的http响应头</td>
+</tr>
+<tr>
+<td>archiveFile.url</td>
+<td>String</td>
+<td>压缩包下载地址</td>
+</tr>
+<tr>
+<td>archiveFile.stream</td>
+<td>InputStream</td>
+<td>压缩包文件流</td>
+</tr>
+<tr>
+<td>archiveFile.type</td>
+<td>CompressType</td>
+<td>压缩包类型</td>
+</tr>
+</tbody>
+</table>
+<h3 id="获取私有文件的访问链接"><a class="anchor" href="#%E8%8E%B7%E5%8F%96%E7%A7%81%E6%9C%89%E6%96%87%E4%BB%B6%E7%9A%84%E8%AE%BF%E9%97%AE%E9%93%BE%E6%8E%A5"><span class="octicon octicon-link"></span></a> 获取私有文件的访问链接</h3>
+<blockquote>
+<p>String preview(String url);</p>
+</blockquote>
+<h4 id="请求参数-11"><a class="anchor" href="#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0-11"><span class="octicon octicon-link"></span></a> 请求参数</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>url</td>
+<td>String</td>
+<td>私有文件的访问链接,60s 有效期</td>
+</tr>
+</tbody>
+</table>
+<h3 id="获取具有一定时效性的私有文件的访问链接"><a class="anchor" href="#%E8%8E%B7%E5%8F%96%E5%85%B7%E6%9C%89%E4%B8%80%E5%AE%9A%E6%97%B6%E6%95%88%E6%80%A7%E7%9A%84%E7%A7%81%E6%9C%89%E6%96%87%E4%BB%B6%E7%9A%84%E8%AE%BF%E9%97%AE%E9%93%BE%E6%8E%A5"><span class="octicon octicon-link"></span></a> 获取具有一定时效性的私有文件的访问链接</h3>
+<blockquote>
+<p>String preview(String url);</p>
+</blockquote>
+<h4 id="请求参数-12"><a class="anchor" href="#%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0-12"><span class="octicon octicon-link"></span></a> 请求参数</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>url</td>
+<td>String</td>
+<td>私有文件的访问链接</td>
+</tr>
+<tr>
+<td>expires</td>
+<td>int</td>
+<td>链接的超时时间</td>
+</tr>
+</tbody>
+</table></p>
+
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+    <div class="mask hidden"></div>
+    
+      <script src="https://gw.alipayobjects.com/as/g/lark/site-toc/2.0.9/toc.js"></script>
+<script>
+  $('#page-toc').generateToc({
+    contentContainer: $('.typo'),
+    hasFirstLevelHeader: false,
+    offsetTop: 0,
+    affix: {
+      bgColor: "transparent",
+    },
+  })
+</script>
+
+    
+  
+
+    </div>
+    <div class="ant-row footer" style="background-image: linear-gradient(180deg,#050b22 0,#050b22 50%,#032158);">
+  <div class="footer-content">
+    <div class="ant-row footer-desc">
+      <div class="ant-col-8 ant-col-offset-2 footer-team">
+        <h4>我们的团队</h4>
+        <p>中国，上海</p>
+      </div>
+      <div class="ant-col-4 ant-col-offset-2 footer-friend">
+        <h4>友情链接</h4>
+        <p>
+          <a href="http://xujin.org">许进沉思录</a>
+        </p>
+        <p>
+          <a href="https://springcloud.cn">Spring Cloud中国社区</a>
+        </p>
+
+      </div>
+      <div class="ant-col-6 ant-col-offset-2 footer-contact">
+        <h4>联系我们</h4>
+        <p>业务咨询：<a href="mailto: Software_King@qq.com">Software_King@qq.com</a></p>
+        <p>技术咨询：<a href="mailto: Software_King@qq.com">Software_King@qq.com</a></p>
+        
+      </div>
+    </div>
+    <div class="copyright">
+      Venus Plus版权所有 &copy; 2017-2020 Venus中间件团队体系  Powered by xujin.org
+    </div>
+  </div>
+</div>
+
+
+    
+    <div style="display: none">
+    <script src="https://s19.cnzz.com/z_stat.php?id=1268345961&web_id=1268345961" language="JavaScript"></script>
+    </div>
+    
+  </body>
+</html>
+
+
