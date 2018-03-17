@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>服务调用网络问题排查 on Venus中间件</title>
+    <link>http://venusplus.cn/faq/</link>
+    <description>Recent content in 服务调用网络问题排查 on Venus中间件</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>2017 Venus Plus出品</copyright>
+    <lastBuildDate>Tue, 01 Aug 2017 09:07:27 +0000</lastBuildDate>
+    
+	<atom:link href="http://venusplus.cn/faq/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2017 双十一迭代封网期间发布审批流程</title>
+      <link>http://venusplus.cn/faq/fengwang20171111/</link>
+      <pubDate>Mon, 06 Nov 2017 12:16:52 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/faq/fengwang20171111/</guid>
+      <description>封网范围  2017-11-06 00:00 ~ 2017-11-13 15:00 停止小淘宝环境内网劫持，Site, H5 应用的办公网灰度不可用 2017-11-04 00:00 ~ 2017-11-13 00:00 Basement 全站不能发布   封网原因 双十一
+ 封网期间值班 请将问题反馈到钉钉群：Basement 金牌服务群 (群二维码请见本文末尾《咨询与处理》)
+ 原则 Basement 遵循全站封网(包含预发)，有发布需求按以下方式操作
+ Assets、H5、Site、Koi 封网审批  已有 aone 审批单的处理步骤  如 aone 审批通过，提供 aone 审批单，联系值班同学直接进入发布阶段   没有 aone 审批单的处理步骤  步骤一：依照「封网邮件：其他变更线上流程」，请邮件联系各域铁三角＋蚂蚁全站架构 @俊义，@祢衡 (铁三角任一人审批即可，全站架构一人审批即可)，并抄送 Basement封网审批组（basement-approval@list.alibaba-inc.com） 步骤二：邮件审批通过后，联系当天 Basement 值班同学添加迭代白名单，允许进入发布阶段 如果是 H5 离线包发布，需要同时抄送 @雷骏、@仈爪、@乔杨，nebulamng 那里需要进行解封操作: https://lark.alipay.com/nebulamng/guide/release-block    邮件要求如下：
+邮件审批人: 变更所属域铁三角+@俊义、@祢衡 - 先由各域铁三角负责审批（默认铁三角需对域内稳定性负责） - 铁三角审批完成后，再由全站架构审批 邮件抄送对象：需求方主管（需进行此次变更的需求方） + 变更执行人及其主管（如scm、PE、DBA、网工等角色）+服务台（@暮晗、@若厉） +全站技术负责（@鲁肃、@阿玺） 邮件标题：请统一添加标签【国庆封网审批】或【2017双11封网审批】 邮件内容参考： - 封网变更必要性？【必填项】 - 业务影响 - 具体变更时间？ - 变更的风险是什么？如何控制风险？   蚂蚁金服铁三角名单如下  凤蝶模板 封网审批  按照凤蝶平台的封网规则，具体见下</description>
+    </item>
+    
+    <item>
+      <title>创建应用无法绑定已有仓库</title>
+      <link>http://venusplus.cn/faq/app_bind_repo/</link>
+      <pubDate>Thu, 19 Oct 2017 12:46:17 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/faq/app_bind_repo/</guid>
+      <description>无法绑定 2017-03-20 后创建的已有仓库，需要联系管理员处理
+钉钉搜索：11794995</description>
+    </item>
+    
+    <item>
+      <title>如何引入前端组件</title>
+      <link>http://venusplus.cn/faq/assets_how_import/</link>
+      <pubDate>Thu, 19 Oct 2017 12:45:44 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/faq/assets_how_import/</guid>
+      <description> 配置 ANTX: assets.url = http://release_asset-demo-5_s8986554_20170803.assets.alipay.net 修改 cmsparse 配置: 配置方式 引入组件版本: #cmsparse(&amp;quot;/swift-assets/charge/asset-demo-5/version.vm&amp;quot;) 实际组件路径: $assetsUrl/g/charge/asset-demo-5/$assetsVersion/  </description>
+    </item>
+    
+    <item>
+      <title>应用研发报错</title>
+      <link>http://venusplus.cn/faq/site-faq/</link>
+      <pubDate>Fri, 04 Aug 2017 07:17:39 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/faq/site-faq/</guid>
+      <description>1. 支付宝钱包访问开发环境HTTS链接，报证书错误 需要安装阿里郎证书，具体方法请参考 https://www.atatech.org/articles/69047#5
+ 2. Basement 无法发布 sourcemap 文件 处于安全考虑，生产环境无法发布 sourcemap ，如果需要测试，需要在预发环境验证
+ 3. Basement构建前端应用，会先把 node_moudles 里面的文件清理再重新安装么？ 不建议将 node_moudles 提交到仓库每次云构建都是从仓库拉源码进行 install，因此 提交到仓库的 node_moudles 是无用的。
+ 4. 提示&amp;quot;没有操作 group 的权限，请将 ant-ued 加入到 group 的 owner 权限中&amp;quot; 在 Basement 中，产品名和 group 的名称是相关联的，如果新增产品名在 gitlab 上已经存在，由于 Basement 需要相应的权限对仓库进行操作，因此需要将 ant-ued 加入到 该 group 的权限
+ 5. 构建出现&amp;quot;error: ERROR: problem with sign-server build: ERROR: problem with sign-server&amp;quot; package.json 中将 @alipay/moggles 升级到最新版本 http://web.npm.alibaba-inc.com/package/@alipay/moggles
+ 6.构建一直卡着 问题</description>
+    </item>
+    
+    <item>
+      <title>服务调用网络问题排查</title>
+      <link>http://venusplus.cn/faq/network/</link>
+      <pubDate>Tue, 01 Aug 2017 09:07:27 +0000</pubDate>
+      
+      <guid>http://venusplus.cn/faq/network/</guid>
+      <description>Basement 线上 gzone &amp;amp; rzone 同时部署，同时通过 https 对外提供 rest 服务。
+ 网络加速 为了保证网络访问最快，egg-basement 插件中对网络连接做了部分优化：
+ 蚂蚁的线上服务会通过 vip 和网络检测，直连到本机房的 Basement 服务器。 其他 BU 的线上服务或者蚂蚁的 stable 环境下，会直连到 Basement GZone 的 Spanner 上。  如果未使用 egg-basement，直接通过 Basement 提供的 sdk 来访问，需要采用下列方式来保证访问速度：
+ 一定要开启 keepalive，具体如何开启请参照快速上手。 如果知道自己的机器部署在杭州机房，请将 endpoint 设置为: https://basement-gzone.alipay.com。   降低 https 建连接的消耗 如果直接通过非 vip（服务没有部署在蚂蚁的线上机房或者没使用 egg-basement）访问 Basement，都是通过的 https 。由于 https 建立连接消耗较大（100ms 左右)，在访问量较小的情况下无法保持 keepalive 连接，所以需要应用定时请求 Basement 服务来保持心跳（通过访问 ${endpoint}/status.alipay 路径来保持心跳），以降低建立连接带来的损耗。当然，如果应用流量并不大，考虑这个问题就有点太早了。
+ 问题排查 当遇到访问 Basement 缓慢的时候，可以通过下面的命令来确认到底是哪个地方慢，再来进行针对性的优化。
+curl -w &amp;quot;DNS解析时间：%{time_namelookup}，TCP 连接建立时间: %{time_connect}, SSL 连接建立时间: %{time_appconnect}, 服务器返回第一个字节所用的时间：%{time_starttransfer}，完成请求所用的时间：%{time_total}，下载大小：%{size_download}，下载速度：%{speed_download}\n&amp;quot; -so /dev/null https://basement-gzone.</description>
+    </item>
+    
+  </channel>
+</rss>
