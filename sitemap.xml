@@ -158,11 +158,6 @@
   </url>
   
   <url>
-    <loc>http://venusplus.cn/venus-rpc/quickstart/</loc>
-    <lastmod>2017-04-27T10:09:20+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://venusplus.cn/venusboot/</loc>
     <lastmod>2017-04-27T10:09:20+00:00</lastmod>
   </url>
@@ -178,37 +173,12 @@
   </url>
   
   <url>
-    <loc>http://venusplus.cn/venus-mvc/quickstart/</loc>
-    <lastmod>2017-04-27T10:09:20+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://venusplus.cn/venus-rest/quickstart/</loc>
-    <lastmod>2017-04-27T10:09:20+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://venusplus.cn/venus-rest/</loc>
-    <lastmod>2017-04-27T10:09:20+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://venusplus.cn/venus-rpc/</loc>
-    <lastmod>2017-04-27T10:09:20+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://venusplus.cn/venus-cloud/quickstart/</loc>
     <lastmod>2017-04-27T10:09:20+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://venusplus.cn/venus-codegen/quickstart/</loc>
-    <lastmod>2017-04-27T10:09:20+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://venusplus.cn/venus-ide/quickstart/</loc>
     <lastmod>2017-04-27T10:09:20+00:00</lastmod>
   </url>
   
@@ -224,16 +194,6 @@
   
   <url>
     <loc>http://venusplus.cn/venus-cloud/</loc>
-    <lastmod>2017-04-27T10:09:20+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://venusplus.cn/venus-ide/</loc>
-    <lastmod>2017-04-27T10:09:20+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://venusplus.cn/venus-mvc/</loc>
     <lastmod>2017-04-27T10:09:20+00:00</lastmod>
   </url>
   
@@ -512,6 +472,10 @@
   
   <url>
     <loc>http://venusplus.cn/pages/</loc>
+  </url>
+  
+  <url>
+    <loc>http://venusplus.cn/product/minos/</loc>
   </url>
   
   <url>
